@@ -11,12 +11,31 @@ body {
 .nav {
   width: 100vw;
   height: 3rem;
-  background-color: lightgray;
+  background-color: transparent;
+  position: fixed;
+  z-index: 1;
 }
 
 header {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   overflow: hidden;
+  z-index: -1;
 }
 
+.header-img {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.header-img > img {
+  width: 450px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: scale(3);
+  padding-inline: auto;
+}

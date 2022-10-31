@@ -2,21 +2,31 @@ import React from 'react'
 
 const Header = () => {
 
-  const header = document.querySelector('.header');
+  // onWheel image zooms out from full screen to fixed smaller image.
+  // element move of screen onWheel
 
-  header.addEventListener('wheel', (e) => {
-    e.preventDefault();
-    if (e.originalEvent.wheelDelta / 120 > 0) {
-      console.log('scrolling up !', 'X: ', e.pageX, 'Y: ', e.pageY);
-    } else {
-      console.log('scrolling down !', 'X: ', e.pageX, 'Y: ', e.pageY);
+  
+
+  const scale = () => {
+
+    const onWheel = (e) => {
+      console.log(e.deltaY)
     }
-  });
+    
+    if (onWheel > 0) {
+        // image zoom out
+    } else if (onWheel < 0) {
+      // image zoom in
+      // transform: scale(1);
+    }
+  }
+
+  // image z index above background texts but under navbar
 
   return (
-    <header className="header">
+    <header onWheel={scale}>
         <div className="header-img">
-           <img src={require('../img/header-img (3).jpg')} width="450" height="auto" alt="" />
+           <img src={require('../Assets/img/header-img (3).jpg')} alt="" />
         </div>
     </header>
   )
