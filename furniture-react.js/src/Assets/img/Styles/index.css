@@ -4,8 +4,19 @@
   padding: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .nav {
   width: 100vw;
   height: 3rem;
   background-color: lightgray;
 }
+
+header {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
