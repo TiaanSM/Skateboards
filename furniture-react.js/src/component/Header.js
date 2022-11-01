@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState, useEffect } from 'react';
+import './Header.css'
 
 
 const Header = () => {
@@ -21,22 +21,56 @@ const Header = () => {
     }
   }
   
-  // Counts the scroll value
-  const [scrollPosition, setScrollPosition] = useState(0);
 
-  const handleScroll = () => {
-    const position = window.scrollY;
-    console.log(position);
-    setScrollPosition(position);
-  };
 
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll, { passive: true });
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
-  }, [scrollPosition]);
+let count = 0;
 
+  window.addEventListener('wheel', function(event)  // needs to be header not window.
+{
+ if (event.deltaY < 0)
+ {
+  count++
+  console.log(count);
+ }
+ else if (event.deltaY > 0)
+ {
+  count--
+  console.log(count);
+ }
+});
+
+
+   switch (count) {
+    case 0:
+       console.log('case 0');
+      break;
+    
+    case -1:
+      console.log('case 1');
+      break;
+    case -2:
+      console.log('case 2');
+      break;
+
+    case -3:
+      console.log('case 3');
+      break;
+
+    case -4:
+      console.log('case 4');
+      break;
+
+    case -5:
+      console.log('case 5');
+      break;
+
+    case -6:
+      console.log('case 6');
+      break;
+
+    case count > 0 :
+      console.log('Scrolling up');
+   }
 
   // Connect the scroll value to the scale amount of the image.
   // image starts out at full screen then shrinks to a fixed size.
