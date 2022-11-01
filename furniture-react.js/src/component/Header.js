@@ -7,19 +7,7 @@ const Header = () => {
   // onWheel image zooms out from full screen to fixed smaller image.
   // element move of screen onWheel
 
-  const scale = () => {
-
-    const onWheel = (e) => {
-      console.log(e.deltaY)
-    }
-    
-    if (onWheel > 0) {
-        // image zoom out
-    } else if (onWheel < 0) {
-      // image zoom in
-      // transform: scale(1);
-    }
-  }
+  const header = useRef(null)
   
   const [scrollCount, setScrollCount] = useState(0);
 
@@ -31,17 +19,52 @@ const Header = () => {
     setScrollCount(prevCount => prevCount + 1);
   }
 
-  const header = useRef(null)
-
   const checkScrollDirection = (event) => {
       if (event.deltaY < 0) {
         console.log('scrolling up');
-        increaseCount()
+        decreaseCount()
       } else if (event.deltaY > 0) {
         console.log('scrolling down');
-        decreaseCount()
+        increaseCount()
       }
   }
+
+  // each case will increase or decrease the size of the image on screen.
+  // the default case will stop the count and init the new state of the page.
+  switch (scrollCount) {
+    case 0: 
+      console.log('case 0')
+      break;
+    
+    case 1: 
+      console.log('case 1')
+      break;
+
+    case 2:
+      console.log('case 2')
+      break;
+
+    case 3:
+      console.log('case 3')
+      break;
+
+    case 4:
+      console.log('case 4')
+      break;
+
+    case 5:
+      console.log('case 5')
+      break;
+
+    case 6:
+      console.log('case 6')
+      break;
+
+    default:
+      console.log('default')
+  }
+    
+
 
   // Connect the scroll value to the scale amount of the image.
   // image starts out at full screen then shrinks to a fixed size.
@@ -55,7 +78,7 @@ const Header = () => {
   // when scrolling up the event occurs in reverse.
 
   return (
-    <header useRef={header} onWheel={checkScrollDirection}>
+    <header ref={header} onWheel={checkScrollDirection}>
         <div className="header-img">
            <img src={require('../Assets/img/header-img (3).jpg')} alt="" />
         </div>
@@ -64,5 +87,8 @@ const Header = () => {
   )
 }
 
+// on document load show loading screen as seen
+// image will be in a container using parralax scroll
+// image will have 2 divs in container animated, highlighting product as seen in mrpops site.
 
 export default Header
