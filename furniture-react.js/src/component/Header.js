@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useRef } from 'react'
 import './Header.css'
 
 
@@ -21,56 +21,27 @@ const Header = () => {
     }
   }
   
+  const [scrollCount, setScrollCount] = useState(0);
 
+  const decreaseCount = () => {
+    setScrollCount(prevCount => prevCount - 1);
+  }
 
-let count = 0;
+  const increaseCount = () => {
+    setScrollCount(prevCount => prevCount + 1);
+  }
 
-  window.addEventListener('wheel', function(event)  // needs to be header not window.
-{
- if (event.deltaY < 0)
- {
-  count++
-  console.log(count);
- }
- else if (event.deltaY > 0)
- {
-  count--
-  console.log(count);
- }
-});
+  const header = useRef(null)
 
-
-   switch (count) {
-    case 0:
-       console.log('case 0');
-      break;
-    
-    case -1:
-      console.log('case 1');
-      break;
-    case -2:
-      console.log('case 2');
-      break;
-
-    case -3:
-      console.log('case 3');
-      break;
-
-    case -4:
-      console.log('case 4');
-      break;
-
-    case -5:
-      console.log('case 5');
-      break;
-
-    case -6:
-      console.log('case 6');
-      break;
-
-    case count > 0 :
-      console.log('Scrolling up');
-   }
+  const checkScrollDirection = (event) => {
+      if (event.deltaY < 0) {
+        console.log('scrolling up');
+        increaseCount()
+      } else if (event.deltaY > 0) {
+        console.log('scrolling down');
+        decreaseCount()
+      }
+  }
 
   // Connect the scroll value to the scale amount of the image.
   // image starts out at full screen then shrinks to a fixed size.
@@ -84,10 +55,11 @@ let count = 0;
   // when scrolling up the event occurs in reverse.
 
   return (
-    <header onWheel={scale}>
+    <header useRef={header} onWheel={checkScrollDirection}>
         <div className="header-img">
            <img src={require('../Assets/img/header-img (3).jpg')} alt="" />
         </div>
+        <div>{ scrollCount }</div>
     </header>
   )
 }
