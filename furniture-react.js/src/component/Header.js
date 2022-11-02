@@ -1,13 +1,11 @@
 import React, { useState, useRef } from 'react'
-import './Header.css'
+import { Home, HeaderContainer, Image, scaleDown1, scaleDown2, scaleDown3, scaleDown4, scaleDown5, scaleDown6 } from './Styled';
 
 
 const Header = () => {
 
-  // onWheel image zooms out from full screen to fixed smaller image.
-  // element move of screen onWheel
-
-  const header = useRef(null)
+  const headerElement = useRef(null)
+  const headerImg = useRef(null)
   
   const [scrollCount, setScrollCount] = useState(0);
 
@@ -63,8 +61,16 @@ const Header = () => {
     default:
       console.log('default')
   }
-    
 
+  return (
+    <header ref={headerElement} onWheel={checkScrollDirection}>
+        <HeaderContainer>
+           <Image src={require('../Assets/img/header-img (3).jpg')} ref={headerImg} alt="" />
+        </HeaderContainer>
+        <div>{ scrollCount }</div>
+    </header>
+  )
+}
 
   // Connect the scroll value to the scale amount of the image.
   // image starts out at full screen then shrinks to a fixed size.
@@ -76,16 +82,6 @@ const Header = () => {
   // header texts float upwards out of screen.
 
   // when scrolling up the event occurs in reverse.
-
-  return (
-    <header ref={header} onWheel={checkScrollDirection}>
-        <div className="header-img">
-           <img src={require('../Assets/img/header-img (3).jpg')} alt="" />
-        </div>
-        <div>{ scrollCount }</div>
-    </header>
-  )
-}
 
 // on document load show loading screen as seen
 // image will be in a container using parralax scroll
