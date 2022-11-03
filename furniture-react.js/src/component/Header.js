@@ -7,29 +7,35 @@ const Header = () => {
 
   const [count, setCount] = useState(0);
 
-  const increaseCount = () => {
-    setCount(count + 1);
-  }
+  const handleWheel = ({ deltaY }) => {
+    setCount((currentCount) =>
+      deltaY > 0 ? currentCount + 1 : currentCount - 1
+    );
+  };
 
-  const decreaseCount = () => {
-    setCount(count - 1);
-  }
 
-  const handleScroll = (event) => {
-
-    if (event.deltaY > 0) {
-      increaseCount();
-
-    } else if (event.deltaY < 0) {
-      decreaseCount();
+  const handleDirection = (event) => {
+    const value = event.deltaY;
+    let way = '';  // Make this value global and part of animation name.
+    if (value > 0) {
+      way = 'up'
+      console.log(way)
+    } else if (value < 0) {
+      way = 'down'
+      console.log(way)
     }
   }
-  console.log(count)
+
+  
+  console.log(count);
+
+  
+  
 
   return (
-    <header onWheel={handleScroll} ref={header}>
+    <header onWheel={handleDirection} ref={header}>
         <img src={require('../Assets/img/header-img (3).jpg')}
-        style={{ animation: `scaleImg${count} 2s ease forwards` }}
+        style={{ animation: `scaleImg${count} 2s ease forwards` }}  // add up or down animation direction.
         alt="" />
     </header>
   )
