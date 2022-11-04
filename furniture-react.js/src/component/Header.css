@@ -12,24 +12,105 @@ img {
     height: auto;
 }
 
-@keyframes scaleImg1 {
+@keyframes downScale1 {
     0% {
-        width: 100vw;
-        height: 100vh;
+        transform: scale(6); 
     }
     100% {
-        width: 90vw;
-        height: 80vh;
+        transform: scale(5); 
     }
 }
 
-@keyframes scaleImg2 {
+@keyframes downScale2 {
     0% {
-        width: 90vw;
-        height: 80vh;
+        transform: scale(5); 
     }
     100% {
-        width: 80vw;
-        height: 70vh;
+        transform: scale(4); 
+    }
+}
+
+@keyframes downScale3 {
+    0% {
+        transform: scale(4); 
+    }
+    100% {
+        transform: scale(3); 
+    }
+}
+
+@keyframes downScale4 {
+    0% {
+        transform: scale(3); 
+    }
+    100% {
+        transform: scale(2); 
+    }
+}
+
+@keyframes downScale5 {
+    0% {
+        transform: scale(2); 
+    }
+    100% {
+        transform: scale(1); 
+    }
+}
+
+@keyframes downScale6 {
+    0% {
+        transform: scale(1); 
+    }
+    100% {
+        transform: scale(0); 
+    }
+}
+
+@keyframes upScale1 {
+    0% {
+        transform: scale(0); 
+    }
+    100% {
+        transform: scale(1); 
+    }
+}
+@keyframes upScale2 {
+    0% {
+        transform: scale(6); 
+    }
+    100% {
+        transform: scale(5); 
+    }
+}
+@keyframes upScale3 {
+    0% {
+        transform: scale(5); 
+    }
+    100% {
+        transform: scale(4); 
+    }
+}
+@keyframes upScale4 {
+    0% {
+        transform: scale(4); 
+    }
+    100% {
+        transform: scale(3); 
+    }
+}
+@keyframes upScale5 {
+    0% {
+        transform: scale(3); 
+    }
+    100% {
+        transform: scale(2); 
+    }
+}
+@keyframes upScale6 {
+    0% {
+        transform: scale(2); 
+    }
+    100% {
+        transform: scale(1); 
     }
 }
