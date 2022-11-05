@@ -21,15 +21,19 @@ const Header = () => {
   }
 
   console.log(count);
+  
+  // Header
+  // header starts out zoomed out with header texts.
+  // onwheel shrink container and header texts move up off screen per wheel.
+  // when fully zoomed out background texts animation active.
 
-  // Improve code, split components if needed.
-  // Change the animation changing origin.
-  // Complete header and improve.
+  // Header texts
+  // Giant title, description section, cta button and downscroll button.
 
   return (
     <header onWheel={handleDirection} ref={header}>
         <img src={require('../Assets/img/header-img (3).jpg')}
-        style={{ animation: `${direction}Scale${count} 1s ease-in forwards` }}  // add up or down animation direction.
+        style={{ animation: `${direction}Scale${count} 1s ease-in forwards` }} 
         alt="" />
     </header>
   )
