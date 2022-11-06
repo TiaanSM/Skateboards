@@ -6,11 +6,9 @@ import Footer from './component/Footer';
 function App() {
 
   return (
-    // Finish navbar
-    // Complete header
-
-    // Check mobile responsiveness before moving on to next section.
-    // Use styled components for styling.
+    
+    // Main section
+    // 
     
     <div className="App">
       <Navbar />
