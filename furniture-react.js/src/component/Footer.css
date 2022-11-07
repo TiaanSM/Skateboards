@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+footer {
+    width: 100vw;
+    height: 100vh;
+    background-color: #e84a5f;
+}
+
+.footer-title {
+    font-size: 3rem;
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+}
