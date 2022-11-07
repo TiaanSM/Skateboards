@@ -7,12 +7,8 @@ function App() {
 
   return (
     
-    // colors:
-    //darkblue  #2b4d59
-    //lightblue  #39998e
-    //yellow  #ffdc7c
-    //orange  #ffaa67
-    //dark orange  #da674a 
+    // colors: #e84a5f (pink), #def2f1 (lightblue)
+    // font-family: cervo, HelveticaNeueCyr
     
     <div className="App">
       <Navbar />
