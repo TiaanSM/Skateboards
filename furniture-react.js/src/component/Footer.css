@@ -3,6 +3,10 @@ footer {
     width: 100vw;
     height: 100vh;
     background-color: #e84a5f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .footer-title {
@@ -12,6 +16,40 @@ footer {
     text-align: center;
     color: white;
     font-family: 'Signika', sans-serif;
+}
+
+form {
+    width: calc(100vw - 8rem);
+    height: 50vh;
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#input {
+    width: 100%;
+    height: 2rem;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#input:focus {
+    outline: none;
+}
+
+.input-details {
+    width: 100%;
+    height: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+#submit {
+    width: 4rem;
+    height: 2rem;
+    background-color: #333;
 }
 
 .footer-links {
