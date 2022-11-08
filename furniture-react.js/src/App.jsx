@@ -2,13 +2,13 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from './component/Navbar';
 import Header from './component/Header'
 import Footer from './component/Footer';
+import Catalogue from './component/Catalogue';
 
 function App() {
 
   return (
     
     // colors: #e84a5f (pink), #def2f1 (lightblue)
-    // font-family: cervo, HelveticaNeueCyr
     
     <div className="App">
       <Navbar />
@@ -18,7 +18,7 @@ function App() {
           <Route path="/footer" element={ <Footer /> }></Route>
       </Routes>
   */}
-    <Footer />
+    <Catalogue />
     </div>
       
   )
