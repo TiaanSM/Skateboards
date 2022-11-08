@@ -1,6 +1,56 @@
 main {
     width: 100vw;
     height: auto;
-    min-height: 100vh;
     background-color: #def2f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 8rem;
+    font-family: sans-serif;
+}
+
+.card-container {
+    width: calc(100vw - 4rem);
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.5rem;
+    border: 1px solid pink;
+}
+
+.card {
+    width: 100%;
+    height: 440px;
+    border-radius: 3rem 0rem 0rem 0rem;
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+}
+
+.card > img {
+    width: 100%;
+    height: auto;
+}
+
+.board-name, .board-price  {
+    font-size: 1.2rem;
+    color: #e84a5f;
+    margin-left: 2rem;
+}
+
+.board-size {
+    margin: 0.5rem 0rem 0.5rem 2rem;
+}
+
+.add-to-cart {
+    position: absolute;
+    right: 2rem;
+    bottom: 2.8rem;
+    border-radius: 50%;
+    padding: 1.3rem;
+    border: none;
+    background-color: #e84a5f;
+    cursor: pointer;
 }
