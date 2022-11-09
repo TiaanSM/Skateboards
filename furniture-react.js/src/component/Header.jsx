@@ -32,9 +32,11 @@ const Header = () => {
 
   return (
     <header onWheel={handleDirection} ref={header}>
-        <img src={require('../Assets/img/header-img (3).jpg')}
-        style={{ animation: `${direction}Scale${count} 0.5s ease forwards` }} 
-        alt="" />
+      <div className="image-container"
+      style={{ animation: `${direction}Scale${count} 0.5s ease forwards` }}
+      >
+        <img src={require('../Assets/img/header-img (3).jpg')} alt="" />
+      </div>
     </header>
   )
 }

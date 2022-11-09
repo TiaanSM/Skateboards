@@ -15,103 +15,127 @@ img {
 
 @keyframes downScale1 {
     0% {
-        transform: scale(6); 
+        width: 0;
+        height: 0; 
     }
     100% {
-        transform: scale(5); 
+        width: 0;
+        height: 0; 
     }
 }
 
 @keyframes downScale2 {
     0% {
-        transform: scale(5); 
+        width: 0;
+        height: 0; 
     }
     100% {
-        transform: scale(4); 
+        width: 0;
+        height: 0; 
     }
 }
 
 @keyframes downScale3 {
     0% {
-        transform: scale(4); 
+        width: 0;
+        height: 0; 
     }
     100% {
-        transform: scale(3); 
+        width: 0;
+        height: 0; 
     }
 }
 
 @keyframes downScale4 {
     0% {
-        transform: scale(3); 
+        width: 0;
+        height: 0;  
     }
     100% {
-        transform: scale(2); 
+        width: 0;
+        height: 0;  
     }
 }
 
 @keyframes downScale5 {
     0% {
-        transform: scale(2); 
+        width: 0;
+        height: 0;  
     }
     100% {
-        transform: scale(1); 
+        width: 0;
+        height: 0;  
     }
 }
 
 @keyframes downScale6 {
     0% {
-        transform: scale(1); 
+        width: 0;
+        height: 0;  
     }
     100% {
-        transform: scale(0); 
+        width: 450px;
+        height: auto; 
     }
 }
 
 @keyframes upScale1 {
     0% {
-        transform: scale(5); 
+        width: 0;
+        height: 0;  
     }
     100% {
-        transform: scale(6); 
+        width: 0;
+        height: 0;  
     }
 }
 @keyframes upScale2 {
     0% {
-        transform: scale(4); 
+        width: 0;
+        height: 0;  
     }
     100% {
-        transform: scale(5); 
+        width: 0;
+        height: 0;  
     }
 }
 @keyframes upScale3 {
     0% {
-        transform: scale(3); 
+        width: 0;
+        height: 0;  
     }
     100% {
-        transform: scale(4); 
+        width: 0;
+        height: 0;  
     }
 }
 @keyframes upScale4 {
     0% {
-        transform: scale(2); 
+        width: 0;
+        height: 0;  
     }
     100% {
-        transform: scale(3); 
+        width: 0;
+        height: 0;  
     }
 }
 @keyframes upScale5 {
     0% {
-        transform: scale(1); 
+        width: 0;
+        height: 0;  
     }
     100% {
-        transform: scale(2); 
+        width: 0;
+        height: 0;  
     }
 }
 @keyframes upScale6 {
     0% {
-        transform: scale(0); 
+        width: 0;
+        height: 0;  
     }
     100% {
-        transform: scale(1); 
+        width: 0;
+        height: 0;  
     }
 }
