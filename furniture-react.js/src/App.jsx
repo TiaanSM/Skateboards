@@ -3,6 +3,7 @@ import Navbar from './component/Navbar';
 import Header from './component/Header'
 import Footer from './component/Footer';
 import Catalogue from './component/Catalogue';
+import Partner from './component/Partner';
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
           <Route path="/footer" element={ <Footer /> }></Route>
       </Routes>
   */}
-    <Catalogue />
+    <Partner />
     </div>
       
   )
