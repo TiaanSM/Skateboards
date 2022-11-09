@@ -10,6 +10,12 @@ main {
     font-family: sans-serif;
 }
 
+.section-title {
+    font-size: 5.875rem;
+    color: #e84a5f;
+    margin-bottom: 3rem;
+}
+
 .card-container {
     width: calc(100vw - 4rem);
     height: auto;
