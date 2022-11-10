@@ -21,7 +21,7 @@ const Navbar = () => {
            <span className="btn-theme-shop">0</span>
         </div>
 
-        <span className="btn-theme">Skateboards</span>
+        <span className="btn-theme catalogue-link">Skateboards</span>
 
         <span className="btn-theme menu">
           Menu

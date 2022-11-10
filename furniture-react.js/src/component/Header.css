@@ -1,16 +1,8 @@
 header {
     width: 100vw;
-    height: 100vh;
-    background-color: lightgray;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-img {
-    width: 450px;
     height: auto;
+    background-color: lightgray;
+    overflow: hidden;
 }
 
 @keyframes downScale1 {

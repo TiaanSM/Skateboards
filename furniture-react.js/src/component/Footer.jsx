@@ -45,15 +45,15 @@ const Footer = () => {
 
       <span className="footer-links">
         <p className="footer-tag"> &copy; SKATEBOARDS / All Rights Reserved</p>
-        <a href="" className="footer-tag">Public offer</a>
+        <a href="/" className="footer-tag">Public offer</a>
 
         <span className="footer-social-links">
-          <a href="" className="social-link">Facebook</a>
-          <a href="" className="social-link">Instagram</a>
-          <a href="" className="social-link">Telegram</a>
+          <a href="/" className="social-link">Facebook</a>
+          <a href="/" className="social-link">Instagram</a>
+          <a href="/" className="social-link">Telegram</a>
         </span>
 
-        <a href="" className="footer-tag">Made by Tiaan McLeod</a>
+        <a href="/" className="footer-tag">Made by Tiaan McLeod</a>
       </span>
     </footer>
   )
