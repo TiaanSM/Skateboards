@@ -1,10 +1,10 @@
 import React from 'react'
-import '../component/Partner.css';
+import '../styles/Partner.module.css';
 
 const Partner = () => {
   return (
     <section>
-        <img src={require('../Assets/img/partner-img.jpg')} alt="" className="partner-img" />
+        <img src={require('../img/partner-img.jpg')} alt="" className="partner-img" />
         <h5 className="partner-title">WE LOVE<br/>PARTNERSHIP</h5>
         <p className="partner-desc">
             Situation: your place, be it a city cafe,<br/> deli or bar, has got everything in the world. Almost.

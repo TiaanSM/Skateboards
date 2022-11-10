@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import '../component/Header.css';
+import '../styles/Header.module.css';
 
 const Header = () => {
   
@@ -30,11 +30,15 @@ const Header = () => {
   // Header texts
   // Giant title, description section, cta button and downscroll button.
 
+  // <img src={require('../Assets/img/header-img (3).jpg')} alt=""/> 
+
   return (
     <header onWheel={handleDirection} ref={header}>
-        <img src={require('../Assets/img/header-img (3).jpg')} alt=""
-        style={{ animation: `${direction}Scale${count} 0.5s ease forwards` }}
-        />
+
+      <div className="img-container"
+      style={{ animation: `${direction}Scale${count} 0.5s ease forwards`}}>
+
+      </div>
     </header>
   )
 }

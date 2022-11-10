@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import CardDetails from './CardDetails';
-import '../component/Catalogue.css';
+import CardDetails from '../CardDetails';
+import '../styles/Catalogue.module.css';
 
 const Catalogue = () => {
 

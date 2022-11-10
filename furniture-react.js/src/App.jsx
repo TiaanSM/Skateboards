@@ -1,9 +1,9 @@
 import { Routes, Route } from 'react-router-dom';
-import Navbar from './component/Navbar';
-import Header from './component/Header'
-import Footer from './component/Footer';
-import Catalogue from './component/Catalogue';
-import Partner from './component/Partner';
+import Navbar from './component/layout/Navbar';
+import Header from './component/layout/Header'
+import Footer from './component/layout/Footer';
+import Catalogue from './component/layout/Catalogue';
+import Partner from './component/layout/Partner';
 
 function App() {
 
