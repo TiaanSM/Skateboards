@@ -4,7 +4,6 @@ nav {
     background-color: transparent;
     border-bottom: 1px solid black;
     z-index: 100;
-    position: fixed;
     display: flex;
     justify-content: flex-end;
     align-items: center;
