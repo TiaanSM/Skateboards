@@ -5,6 +5,8 @@ import Footer from './component/layout/Footer';
 import Catalogue from './component/layout/Catalogue';
 import Partner from './component/layout/Partner';
 
+import BuyItem from './component/BuyItem';
+
 function App() {
 
   return (
@@ -19,7 +21,7 @@ function App() {
           <Route path="/footer" element={ <Footer /> }></Route>
       </Routes>
   */}
-      <Header />
+      <BuyItem />
     </div>
       
   )

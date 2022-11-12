@@ -5,7 +5,7 @@ const Header = () => {
   
   const header = useRef(null)
 
-  const [count, setCount] = useState(1);
+  const [count, setCount] = useState(0);
   let [direction, setDirection] = useState('down');
 
 
@@ -36,7 +36,7 @@ const Header = () => {
     <header onWheel={handleDirection} ref={header}>
 
       <div className="img-container"
-      style={{ animation: `${direction}Scale${count} 0.5s ease forwards`}}>
+      style={{ animation: `${direction}Scale${count} 0.3s ease-in-out forwards`}}>
 
       </div>
     </header>
