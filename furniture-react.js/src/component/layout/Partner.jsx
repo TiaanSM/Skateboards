@@ -2,6 +2,10 @@ import React from 'react'
 import '../styles/Partner.css';
 
 const Partner = () => {
+
+  // image streching, text color little hard to see.
+  // fix: change image || make container parralex and change text color.
+
   return (
     <section>
         <img src={require('../img/partner-img.jpg')} alt="" className="partner-img" />

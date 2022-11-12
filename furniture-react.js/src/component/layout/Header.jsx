@@ -30,7 +30,10 @@ const Header = () => {
   // Header texts
   // Giant title, description section, cta button and downscroll button.
 
-  // <img src={require('../Assets/img/header-img (3).jpg')} alt=""/> 
+  // if (count > 6) => container size fixed to last animation size.
+  // remove event listener 
+  // if (count < 0) => count stop and stays 0
+  // if count <= 6 adds even back to header.
 
   return (
     <header onWheel={handleDirection} ref={header}>

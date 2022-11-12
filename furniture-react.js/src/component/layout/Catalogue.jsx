@@ -2,10 +2,20 @@ import React, { useState } from 'react'
 import CardDetails from '../CardDetails';
 import '../styles/Catalogue.css';
 
+import BuyItem from '../BuyItem';
+
 const Catalogue = () => {
 
   // seperate card component, display cards with map().
   const [details, setDetails] = useState(CardDetails); 
+
+  const openCartModal = () => {
+    // onClick displays BuyItem component.
+    // link the given clicked item to right key to display details of the card.
+    return (
+      <BuyItem />  // details might have to be mapped.
+    )
+  }
 
   return (
     <main>
@@ -31,7 +41,7 @@ const Catalogue = () => {
           }
 
         </div>
-        <a href="">ALL DECKS</a>
+        <a href="" className="catalog-cta">ALL DECKS</a>
     </main>
   )
 }

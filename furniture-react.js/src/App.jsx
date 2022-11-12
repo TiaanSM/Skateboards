@@ -13,6 +13,7 @@ function App() {
   return (
     
     // colors: #e84a5f (pink), #def2f1 (lightblue)
+    // css need to made scoped or replaced with styled components, or clean up and improve naming convention.
     
     <div className="App">
       <Navbar />
@@ -22,7 +23,7 @@ function App() {
           <Route path="/footer" element={ <Footer /> }></Route>
       </Routes>
   */}
-      <OpenMenu />
+      <Catalogue />
     </div>
       
   )

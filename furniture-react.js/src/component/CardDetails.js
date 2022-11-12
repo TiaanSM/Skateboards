@@ -40,6 +40,20 @@ const CardDetails = [
         image: require('../component/img/skateboard-6.jpg'),
         size: '8.25',
         price: 'R 1399'
+    },
+    {
+        id: '7',
+        design: 'Four fathers',
+        image: require('../component/img/skateboard-3.jpg'),
+        size: '8.25',
+        price: 'R 1600'
+    },
+    {
+        id: '8',
+        design: 'KFD amber',
+        image: require('../component/img/skateboard-5.jpg'),
+        size: '7.5',
+        price: 'R 999'
     }
 ]
 export default CardDetails;

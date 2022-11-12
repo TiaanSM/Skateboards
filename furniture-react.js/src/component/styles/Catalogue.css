@@ -23,7 +23,6 @@ main {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 0.5rem;
-    border: 1px solid pink;
 }
 
 .card {
@@ -33,6 +32,10 @@ main {
     overflow: hidden;
     background-color: white;
     position: relative;
+}
+
+.card:nth-child(2), .card:nth-child(4), .card:nth-child(6), .card:nth-child(8) {
+    border-radius: 0 3rem 0 0;
 }
 
 .card > img {
@@ -59,4 +62,17 @@ main {
     border: none;
     background-color: #e84a5f;
     cursor: pointer;
+}
+
+.catalog-cta {
+    width: 8rem;
+    height: 8rem;
+    border: 5px solid #e84a5f;
+    text-decoration: none;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin: 2rem 0rem 2rem 0rem;
 }
