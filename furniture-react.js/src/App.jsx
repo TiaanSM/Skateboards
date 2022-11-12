@@ -6,6 +6,7 @@ import Catalogue from './component/layout/Catalogue';
 import Partner from './component/layout/Partner';
 
 import BuyItem from './component/BuyItem';
+import OpenMenu from './component/OpenMenu';
 
 function App() {
 
@@ -21,7 +22,7 @@ function App() {
           <Route path="/footer" element={ <Footer /> }></Route>
       </Routes>
   */}
-      <BuyItem />
+      <OpenMenu />
     </div>
       
   )
