@@ -5,7 +5,6 @@ import Footer from './component/layout/Footer';
 import Catalogue from './component/layout/Catalogue';
 import Partner from './component/layout/Partner';
 
-import BuyItem from './component/BuyItem';
 import OpenMenu from './component/OpenMenu';
 
 function App() {
