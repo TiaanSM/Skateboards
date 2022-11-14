@@ -4,6 +4,7 @@ import Header from './component/layout/Header'
 import Footer from './component/layout/Footer';
 import Catalogue from './component/layout/Catalogue';
 import Partner from './component/layout/Partner';
+import Main from './component/layout/Main';
 
 import OpenMenu from './component/OpenMenu';
 
@@ -22,7 +23,7 @@ function App() {
           <Route path="/footer" element={ <Footer /> }></Route>
       </Routes>
   */}
-      <Header />
+      <Main />
     </div>
       
   )
