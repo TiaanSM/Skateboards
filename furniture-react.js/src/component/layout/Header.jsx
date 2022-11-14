@@ -27,6 +27,8 @@ const Header = () => {
   // onwheel shrink container and header texts move up off screen per wheel.
   // when fully zoomed out background texts animation active.
 
+  // background texts = requires = text-shadow: 0 0 5px black;
+
   // Header texts
   // Giant title, description section, cta button and downscroll button.
 
@@ -40,7 +42,7 @@ const Header = () => {
 
       <div className="img-container"
       style={{ animation: `${direction}Scale${count} 0.3s ease-in-out forwards`}}>
-
+        <img src={require('../img/header-img (3).jpg')} alt="" />
       </div>
     </header>
   )
