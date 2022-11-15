@@ -1,7 +1,6 @@
 header {
     width: 100vw;
     height: 100vh;
-    background-color: lightgray;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -14,7 +13,6 @@ header {
 .img-container {
     width: 100vw; 
     height: 100vh;
-    background-color: gray;
     overflow-y: hidden;
     overflow-x: hidden;
     perspective: 10px;
@@ -29,69 +27,86 @@ header {
     height: auto;
 }
 
+.background-text-container {
+    position: absolute;
+    z-index: -5;
+    font-size: 3rem;
+}
+
 @keyframes downScale1 {
     0% {
         width: 100vw;
         height: 100vh; 
     }
     100% {
-        width: 90vw;
-        height: 96vh; 
+        width: 95vw;
+        height: 98vh; 
     }
 }
 
 @keyframes downScale2 {
     0% {
-        width: 90vw;
-        height: 96vh; 
+        width: 95vw;
+        height: 98vh; 
     }
     100% {
-        width: 80vw;
-        height: 92vh; 
+        width: 85vw;
+        height: 96vh; 
     }
 }
 
 @keyframes downScale3 {
     0% {
-        width: 80vw;
-        height: 92vh; 
+        width: 85vw;
+        height: 96vh; 
     }
     100% {
-        width: 70vw;
-        height: 88vh; 
+        width: 80vw;
+        height: 94vh; 
     }
 }
 
 @keyframes downScale4 {
     0% {
-        width: 70vw;
-        height: 88vh;  
+        width: 80vw;
+        height: 94vh;  
     }
     100% {
-        width: 60vw;
-        height: 84vh;  
+        width: 75vw;
+        height: 92vh;  
     }
 }
 
 @keyframes downScale5 {
     0% {
-        width: 60vw;
-        height: 84vh;  
+        width: 75vw;
+        height: 92vh;  
     }
     100% {
-        width: 50vw;
-        height: 80vh;  
+        width: 70vw;
+        height: 90vh;  
     }
 }
 
 @keyframes downScale6 {
     0% {
-        width: 50vw;
-        height: 80vh;  
+        width: 70vw;
+        height: 90vh;  
     }
     100% {
-        width: 40vw;
-        height: 74vh; 
+        width: 65vw;
+        height: 88vh; 
+    }
+}
+
+@keyframes downScale7 {
+    0% {
+        width: 65vw;
+        height: 88vh;  
+    }
+    100% {
+        width: 60vw;
+        height: 86vh; 
     }
 }
 

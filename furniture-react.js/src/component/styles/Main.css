@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #e84a5f;
 }
 
 .main-title {
@@ -12,18 +13,18 @@
     text-align: center;
     font-family: sans-serif;
     padding: 5rem 0rem 0rem 0rem;
+    z-index: 10;
 }
 
 .main-section-container {
     width: calc(100vw - 6rem);
-    background-color: lightblue;
-    border: 1px solid red;
+    background-color: #e84a5f;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     position: relative;
     top: -10rem;
-    z-index: -10;
     gap: 2rem;
+    border: 1px solid black;
 }
 
 .main-img-1 {
@@ -34,16 +35,25 @@
     overflow: hidden;
 }
 
+.image-container {
+    width: 100%;
+    height: 100%;
+}
+
 .main-img-2 {
     width: 20.2rem;
     height: 15rem;
     background-color: red;
+    position: absolute;
+    top: 40rem;
 }
 
 .main-img-3 {
     width: 20.2rem;
     height: 15rem;
     background-color: orangered;
+    position: absolute;
+    bottom: 2rem;
 }
 
 .main-text-title {
