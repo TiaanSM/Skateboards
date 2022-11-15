@@ -33,7 +33,7 @@ const Navbar = () => {
           <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H20V1H0V0ZM0 5H20V6H0V5ZM20 10H0V11H20V10Z"></path>
           </svg>
         </span>
-          { toggle && <OpenMenu />}
+          { toggle && <OpenMenu handleToggle={handleToggle} />}
       </div>
     </nav>
   )
