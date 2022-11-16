@@ -3,7 +3,7 @@ import '../styles/Partner.css';
 
 const Partner = () => {
 
-  // image streching, text color little hard to see.
+  //  text color little hard to see.
   // fix: change image || make container parralex and change text color.../// img src={require('../img/img-8.jpg')} alt=""
 
   return (
@@ -16,7 +16,7 @@ const Partner = () => {
             It is quite<br/> possible that you lack mr.pops. And this can be fixed.
         </p>
     </section>
-    
+
   )
 }
 

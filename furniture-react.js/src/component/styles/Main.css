@@ -12,8 +12,10 @@
     font-size: 5rem;
     text-align: center;
     font-family: sans-serif;
-    padding: 5rem 0rem 0rem 0rem;
+    padding: 3rem 0rem 0rem 0rem;
     z-index: 10;
+    color: white;
+    line-height: 7rem;
 }
 
 .main-section-container {
@@ -42,18 +44,20 @@
 
 .main-img-2 {
     width: 20.2rem;
-    height: 15rem;
+    height: auto;
     background-color: red;
     position: absolute;
-    top: 40rem;
+    bottom: 16rem;
+    border-radius: 0 6rem 0 0;
 }
 
 .main-img-3 {
     width: 20.2rem;
-    height: 15rem;
+    height: auto;
     background-color: orangered;
     position: absolute;
-    bottom: 2rem;
+    bottom: 4rem;
+    border-radius: 6rem 0 0 0;
 }
 
 .main-text-title {
