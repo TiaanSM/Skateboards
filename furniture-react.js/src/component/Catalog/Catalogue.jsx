@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import CardDetails from '../CardDetails';
-import '../styles/Catalogue.css';
+import '../Catalog/Catalogue.css';
 
 const Modal = ({isOpen, onClose, CardDetails}) => {
 

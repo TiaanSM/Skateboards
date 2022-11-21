@@ -1,10 +1,11 @@
 import { Routes, Route } from 'react-router-dom';
-import Navbar from './component/layout/Navbar';
-import Header from './component/layout/Header'
-import Footer from './component/layout/Footer';
-import Catalogue from './component/layout/Catalogue';
-import Partner from './component/layout/Partner';
-import Main from './component/layout/Main';
+
+import Navbar from './component/Navbar/Navbar';
+import Header from './component/Hero/Header'
+import Footer from './component/Footer/Footer';
+import Catalogue from './component/Catalog/Catalogue';
+import Partner from './component/Partner/Partner';
+import Main from './component/Main/Main';
 
 import OpenMenu from './component/OpenMenu';
 
@@ -23,7 +24,7 @@ function App() {
           <Route path="/footer" element={ <Footer /> }></Route>
       </Routes>
   */}
-      <Main />
+      <Catalogue />
     </div>
       
   )
