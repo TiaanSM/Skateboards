@@ -42,9 +42,9 @@ const Header = () => {
       </div>
 
       <div className="background-text-container">
-        <h3>* WE ALWAYS CHECK THE QUALITY *<span className="hollow-texts"> WE ALWAYS CHECK THE QUALITY * </span></h3>
-        <h3>* RECYCLED MATERIALS *<span className="hollow-texts"> RECYCLED MATERIAL * </span></h3>
-        <h3>* ART ON MAPLE MATERPIECES *<span className="hollow-texts"> ART ON MAPLE MASTERPIECES * </span></h3>
+        <h3 className="scrolling-texts">* WE ALWAYS CHECK THE QUALITY *<span className="hollow-texts"> WE ALWAYS CHECK THE QUALITY * </span></h3>
+        <h3 className="scrolling-texts">* RECYCLED MATERIALS *<span className="hollow-texts"> RECYCLED MATERIAL * </span></h3>
+        <h3 className="scrolling-texts">* ART ON MAPLE MATERPIECES *<span className="hollow-texts"> ART ON MAPLE MASTERPIECES * </span></h3>
       </div>
     </header>
   )

@@ -120,3 +120,12 @@ nav {
         box-shadow: 2px 2px #e84a5f ;
     }
 }
+
+@keyframes menuColor {
+    from {
+        color: #e84a5f;
+    } 
+    to {
+        color: white;
+    }
+}

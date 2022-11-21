@@ -8,6 +8,7 @@ header {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #def2f1;
 }
 
 .img-container {
@@ -20,6 +21,7 @@ header {
     justify-content: center;
     align-items: center;
     transform-style: preserve-3d;
+    z-index: 5;
 }
 
 .img-container > img {
@@ -29,9 +31,8 @@ header {
 
 .background-text-container {
     width: 100%;
-    height: 100%;
+    height: auto;
     position: absolute;
-    z-index: -5;
     font-size: 4rem;
     background-color: transparent;
     display: flex;
@@ -40,13 +41,14 @@ header {
     flex-direction: column;
     flex-wrap: nowrap;
     font-family: sans-serif;
-    background-color: #def2f1;
+    background-color: transparent;
+    transform: rotate(-5deg);
 }
 
 .background-text-container > h3 {
     white-space: nowrap;
-    padding: 0.7rem 0;
-    transform: rotate(-5deg);
+    padding: 0.5rem 0;
+    animation: scrollText 10s infinite linear;
 }
 
 .hollow-texts {
@@ -199,5 +201,14 @@ header {
     100% {
         width: 45vw;
         height: 88vh;  
+    }
+}
+
+@keyframes scrollText {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
     }
 }
