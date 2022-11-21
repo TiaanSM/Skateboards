@@ -14,8 +14,7 @@ header {
 .img-container {
     width: 100vw; 
     height: 100vh;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    overflow: hidden;
     perspective: 10px;
     display: flex;
     justify-content: center;
@@ -30,7 +29,7 @@ header {
 }
 
 .background-text-container {
-    width: 100%;
+    width: auto;
     height: auto;
     position: absolute;
     font-size: 4rem;
@@ -45,10 +44,10 @@ header {
     transform: rotate(-5deg);
 }
 
-.background-text-container > h3 {
+.scrolling-texts {
     white-space: nowrap;
     padding: 0.5rem 0;
-    animation: scrollText 10s infinite linear;
+    animation: scrollText 25s infinite linear;
 }
 
 .hollow-texts {
@@ -209,6 +208,6 @@ header {
         transform: translateX(0%);
     }
     to {
-        transform: translateX(-50%);
+        transform: translateX(-35%);
     }
 }

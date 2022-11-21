@@ -31,7 +31,7 @@ const Header = () => {
   // if (count < 0) => count stop and stays 0
   // if count <= 6 adds even back to header.
 
-  
+  // remove image container component and use switch statement instead of if statement.
 
   return (
     <header onWheel={handleDirection}>
@@ -42,9 +42,9 @@ const Header = () => {
       </div>
 
       <div className="background-text-container">
-        <h3 className="scrolling-texts">* WE ALWAYS CHECK THE QUALITY *<span className="hollow-texts"> WE ALWAYS CHECK THE QUALITY * </span></h3>
-        <h3 className="scrolling-texts">* RECYCLED MATERIALS *<span className="hollow-texts"> RECYCLED MATERIAL * </span></h3>
-        <h3 className="scrolling-texts">* ART ON MAPLE MATERPIECES *<span className="hollow-texts"> ART ON MAPLE MASTERPIECES * </span></h3>
+        <span className="scrolling-texts">* WE ALWAYS CHECK THE QUALITY *<span className="hollow-texts"> WE ALWAYS CHECK THE QUALITY * </span>* ART ON MAPLE MATERPIECES *</span>
+        <span className="scrolling-texts"><span className="hollow-texts"> RECYCLED MATERIAL * </span>* RECYCLED MATERIALS *<span className="hollow-texts"> RECYCLED MATERIAL * </span></span>
+        <span className="scrolling-texts">* ART ON MAPLE MATERPIECES *<span className="hollow-texts"> ART ON MAPLE MASTERPIECES * </span>* ART ON MAPLE MATERPIECES *</span>
       </div>
     </header>
   )
