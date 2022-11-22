@@ -4,11 +4,34 @@ import '../Hero/Header.css';
 const Header = () => {
   
   const [count, setCount] = useState(0);
-  let [direction, setDirection] = useState('down');
+  const [direction, setDirection] = useState('down');
+  const [isVisible, setIsVisible] = useState(true);
+
+  const header = useRef(null);
+
+  const callbackFunction = (entries) => {
+    const [entry] = entries
+    setIsVisible(entry.isIntersecting)
+  }
+  const options = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 1.0
+  }
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(callbackFunction, options)
+    if (header.current) observer.observe(header.current)
+
+    return () => {
+      if(header.current) observer.unobserve(header.current)
+    }
+  }, [header, options])
 
 
   const handleDirection = (event) => {
 
+   if (isVisible) {
     const value = event.deltaY;
 
     if (value > 0 && count <= 6) {
@@ -19,19 +42,24 @@ const Header = () => {
       setCount((count) => count - 1);
       setDirection((direction) => direction = 'up');
     }
+   } 
+  }
+
+  if (isVisible && count < 6) {
+    document.body.style.overflow = 'hidden'
+  } else if (isVisible && count === 7) {
+    document.body.style.overflow = ''
   }
 
   console.log(count);
 
   // Header texts
-  // Giant title, description section, cta button and downscroll button.
-
-  // if count 7 header image scroller stops and header gets scrolled down.
+  // Giant title, description section, cta and downscroll button.
 
   return (
     <header onWheel={handleDirection}>
 
-      <div className="img-container" 
+      <div className="img-container" ref={header}
       style={{ animation: `${direction}Scale${count} 0.3s ease-in-out forwards`}}>
         <img src={require('../img/header-img (3).jpg')} alt="Skater" />
       </div>
