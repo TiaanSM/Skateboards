@@ -8,37 +8,32 @@ const Header = () => {
 
 
   const handleDirection = (event) => {
+
     const value = event.deltaY;
-    if (value > 0) {
+
+    if (value > 0 && count <= 6) {
       setCount((count) => count + 1);
       setDirection((direction) => direction = 'down');
-    } else if (value < 0) {
+
+    } else if (value < 0 && count >= 1) {
       setCount((count) => count - 1);
       setDirection((direction) => direction = 'up');
     }
   }
 
   console.log(count);
-  
-  // Header
-  // header scroll down 7, scroll up 6 animation sequences.
 
   // Header texts
   // Giant title, description section, cta button and downscroll button.
 
-  // if (count > 6) => container size fixed to last animation size.
-  // remove event listener 
-  // if (count < 0) => count stop and stays 0
-  // if count <= 6 adds even back to header.
-
-  // remove image container component and use switch statement instead of if statement.
+  // if count 7 header image scroller stops and header gets scrolled down.
 
   return (
     <header onWheel={handleDirection}>
 
-      <div className="img-container"
+      <div className="img-container" 
       style={{ animation: `${direction}Scale${count} 0.3s ease-in-out forwards`}}>
-        <img src={require('../img/header-img (3).jpg')} alt="" />
+        <img src={require('../img/header-img (3).jpg')} alt="Skater" />
       </div>
 
       <div className="background-text-container">

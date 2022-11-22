@@ -1,25 +1,23 @@
 header {
+    max-width: 100vw;
+    max-height: auto;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     background-color: #def2f1;
+    scroll-behavior: smooth;
 }
 
 .img-container {
     width: 100vw; 
     height: 100vh;
     overflow: hidden;
-    perspective: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    transform-style: preserve-3d;
     z-index: 5;
 }
 
@@ -32,7 +30,7 @@ header {
     width: auto;
     height: auto;
     position: absolute;
-    font-size: 4rem;
+    font-size: 5rem;
     background-color: transparent;
     display: flex;
     justify-content: center;
@@ -42,162 +40,163 @@ header {
     font-family: sans-serif;
     background-color: transparent;
     transform: rotate(-5deg);
+    overflow: hidden;
 }
 
 .scrolling-texts {
     white-space: nowrap;
-    padding: 0.5rem 0;
     animation: scrollText 25s infinite linear;
+    color: #e84a5f;
 }
 
 .hollow-texts {
-    text-shadow: 0 0 2px black;
+    text-shadow: 0 0 2px #e84a5f;
     color: #def2f1;
 }
 
 @keyframes downScale1 {
-    0% {
+    from {
         width: 100vw;
         height: 100vh; 
     }
-    100% {
+    to {
         width: 90vw;
         height: 98vh; 
     }
 }
 
 @keyframes downScale2 {
-    0% {
+    from {
         width: 90vw;
         height: 98vh; 
     }
-    100% {
+    to {
         width: 80vw;
         height: 96vh; 
     }
 }
 
 @keyframes downScale3 {
-    0% {
+    from {
         width: 80vw;
         height: 96vh; 
     }
-    100% {
+    to {
         width: 70vw;
         height: 94vh; 
     }
 }
 
 @keyframes downScale4 {
-    0% {
+    from {
         width: 70vw;
         height: 94vh;  
     }
-    100% {
+    to {
         width: 60vw;
         height: 92vh;  
     }
 }
 
 @keyframes downScale5 {
-    0% {
+    from {
         width: 60vw;
         height: 92vh;  
     }
-    100% {
+    to {
         width: 50vw;
         height: 90vh;  
     }
 }
 
 @keyframes downScale6 {
-    0% {
+    from {
         width: 50vw;
         height: 90vh;  
     }
-    100% {
+    to {
         width: 45vw;
         height: 88vh; 
     }
 }
 
 @keyframes downScale7 {
-    0% {
+    from {
         width: 45vw;
         height: 88vh;  
     }
-    100% {
+    to {
         width: 40vw;
         height: 86vh; 
     }
 }
 
 @keyframes upScale1 {
-    0% {
+    from {
         width: 90vw;
         height: 99vh;  
     }
-    100% {
+    to {
         width: 100vw;
         height: 100vh;  
     }
 }
 @keyframes upScale2 {
-    0% {
+    from {
         width: 80vw;
         height: 96vh;  
     }
-    100% {
+    to {
         width: 90vw;
         height: 98vh;  
     }
 }
 @keyframes upScale3 {
-    0% {
+    from {
         width: 70vw;
         height: 94vh;  
     }
-    100% {
+    to {
         width: 80vw;
         height: 96vh;  
     }
 }
 @keyframes upScale4 {
-    0% {
+    from {
         width: 60vw;
         height: 92vh;  
     }
-    100% {
+    to {
         width: 70vw;
         height: 94vh;  
     }
 }
 @keyframes upScale5 {
-    0% {
+    from {
         width: 50vw;
         height: 90vh;  
     }
-    100% {
+    to {
         width: 60vw;
         height: 92vh;  
     }
 }
 @keyframes upScale6 {
-    0% {
+    from {
         width: 45vw;
         height: 88vh;  
     }
-    100% {
+    to {
         width: 50vw;
         height: 90vh;  
     }
 }
 @keyframes upScale7 {
-    0% {
+    from {
         width: 40vw;
         height: 86vh;  
     }
-    100% {
+    to {
         width: 45vw;
         height: 88vh;  
     }

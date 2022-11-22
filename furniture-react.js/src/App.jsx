@@ -23,8 +23,8 @@ function App() {
           <Route path="/header" element={ <Header /> }></Route>
           <Route path="/footer" element={ <Footer /> }></Route>
       </Routes>
-  */}
-      <Footer />
+  */}  
+      <Header />
     </div>
       
   )

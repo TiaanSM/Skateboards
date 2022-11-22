@@ -1,8 +1,3 @@
-.backdrop-2 {
-    width: 100vw;
-    height: 100vh;
-    background-color: lightblue;
-}
 
 .menu-modal {
     width: 420px;
@@ -30,6 +25,11 @@
     right: 3rem;
     top: 2rem;
     cursor: pointer;
+    animation: submit 0.5s ease forwards;
+}
+
+.menu-btn:hover {
+    animation: submitHover 0.5s ease forwards;
 }
 
 .link-container {

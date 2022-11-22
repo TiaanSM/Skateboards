@@ -1,12 +1,12 @@
 .partner-section {
-    height: 100vh;
+    height: 110vh;
     background-color: lightblue;
     position: relative;
     border-radius: 0 5rem 0 0;
 }
 
 .partner-img {
-    height: 100vh;
+    height: 110vh;
     position: relative;
     background-image: url('../img/img-8.jpg');
     background-attachment: fixed;
