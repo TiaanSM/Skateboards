@@ -60,7 +60,7 @@ const Header = () => {
     <header onWheel={handleDirection}>
 
       <div className="img-container" ref={header}
-      style={{ animation: `${direction}Scale${count} 0.3s ease-in-out forwards`}}>
+      style={{ animation: `${direction}Scale${count} 0.2s ease forwards`}}>
         <img src={require('../img/header-img (3).jpg')} alt="Skater" />
       </div>
 

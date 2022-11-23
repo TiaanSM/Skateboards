@@ -75,6 +75,17 @@
 
 .about-cta {
     background-color: transparent;
+    width: 100px;
+    height: 70px;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+}
+
+.about-cta:hover {
+    background-color: #def2f1;
+    color: #e84a5f;
 }
 
 @keyframes slideImage {
@@ -83,5 +94,41 @@
     } 
     100% {
         transform: translateY(-200px);
+    }
+}
+
+@keyframes borderPulse {
+    0% {
+        border: 1px solid white;
+    }
+    10% {
+        border: 1px solid transparent;
+    }
+    20% {
+        border: 1px solid white;
+    }
+    30% {
+        border: 1px solid transparent;
+    }
+    40% {
+        border: 1px solid white;
+    }
+    50% {
+        border: 1px solid transparent;
+    }
+    60% {
+        border: 1px solid white;
+    }
+    70% {
+        border: 1px solid transparent;
+    }
+    80% {
+        border: 1px solid white;
+    }
+    90% {
+        border: 1px solid transparent;
+    }
+    100% {
+        border: 1px solid white;
     }
 }
