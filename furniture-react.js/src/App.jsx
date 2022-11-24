@@ -25,10 +25,6 @@ function App() {
       </Routes>
   */}
       <Header />
-      <Main />
-      <Partner />
-      <Catalogue />
-      <Footer />
     </div>
       
   )

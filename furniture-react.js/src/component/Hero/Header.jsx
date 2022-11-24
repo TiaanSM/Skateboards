@@ -57,9 +57,9 @@ const Header = () => {
   // Giant title, description section, cta and downscroll button.
 
   return (
-    <header onWheel={handleDirection}>
+    <header onWheel={handleDirection} ref={header}>
 
-      <div className="img-container" ref={header}
+      <div className="img-container" 
       style={{ animation: `${direction}Scale${count} 0.2s ease forwards`}}>
         <img src={require('../img/header-img (3).jpg')} alt="Skater" />
       </div>
