@@ -210,3 +210,38 @@ header {
         transform: translateX(-35%);
     }
 }
+
+/* Overlay Hero */
+
+.container-5 {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+  }
+  
+  .text-container {
+    width: 400px;
+    height: auto;
+    text-align: right;
+  }
+  
+  .special-title {
+    font-size: 10rem;
+  }
+  
+  .paragraph-container {
+    width: 400px;
+    height: auto;
+    margin-left: 2rem;
+  }
+  
+  .title-tail {
+    font-size: 10rem;
+    position: absolute;
+    bottom: 0.9rem;
+    right: 29.8rem;
+  }
