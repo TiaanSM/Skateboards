@@ -28,7 +28,6 @@ function App() {
   */}
       <Header />
       <Main />
-      <Footer />
     </div>
       
   )

@@ -1,4 +1,4 @@
-header {
+.header-1 {
     max-width: 100vw;
     max-height: auto;
     width: 100vw;
@@ -9,7 +9,25 @@ header {
     align-items: center;
     background-color: #def2f1;
     scroll-behavior: smooth;
+    z-index: 15;
+    position: fixed;
 }
+
+.header-2 {
+    max-width: 100vw;
+    max-height: auto;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #def2f1;
+    scroll-behavior: smooth;
+    z-index: 15;
+    position: sticky;
+}
+
 
 .img-container {
     width: 100vw; 
@@ -19,16 +37,18 @@ header {
     justify-content: center;
     align-items: center;
     z-index: 5;
+    position: relative;
 }
 
 .img-container > img {
     width: 100%;
     height: auto;
+    position: absolute;
 }
 
 .background-text-container {
-    width: auto;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
     position: absolute;
     font-size: 5rem;
     background-color: transparent;
@@ -134,7 +154,7 @@ header {
 @keyframes upScale1 {
     from {
         width: 90vw;
-        height: 99vh;  
+        height: 98vh;  
     }
     to {
         width: 100vw;
