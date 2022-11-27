@@ -220,28 +220,45 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 4rem;
+    font-family: sans-serif;
+    z-index: 20;
+    background-color: transparent;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.1);
   }
   
   .text-container {
-    width: 400px;
+    width: 50%;
     height: auto;
     text-align: right;
   }
   
   .special-title {
     font-size: 10rem;
+    line-height: 10rem;
+    font-weight: 500;
+    color: #def2f1;
   }
   
   .paragraph-container {
-    width: 400px;
+    width: 50%;
+    height: 100%;
+    padding: 2rem;
+  }
+
+  .overlay-desc {
+    width: 475px;
     height: auto;
-    margin-left: 2rem;
+    padding-top: 5.25rem;
+    padding-bottom: 5.7rem;
+    color:  #def2f1;
   }
   
   .title-tail {
     font-size: 10rem;
     position: absolute;
-    bottom: 0.9rem;
-    right: 29.8rem;
+    bottom: 5rem;
+    right: 21.5rem;
+    font-weight: 500;
+    color:  #def2f1;
   }

@@ -1,11 +1,57 @@
 import React, { useState, useRef, useEffect } from 'react';
 import '../Hero/Header.css';
+import OverlayHero from './OverlayHero';
+
+import {motion, useScroll} from 'framer-motion';
 
 const Header = () => {
   
+  const { scrollY } = useScroll();
+    
+  useEffect(() => {
+    return scrollY.onChange((latest) => {
+      console.log("Page scroll:", latest / 100 * 1)
+    })
+  }, [])
+
+
+  return (
+    <header>
+
+      <div className="img-container" >
+        <img src={require('../img/header-img (3).jpg')} alt="Skater" />
+      </div>
+
+      <div className="background-text-container">
+        <span className="scrolling-texts">* WE ALWAYS CHECK THE QUALITY *<span className="hollow-texts"> WE ALWAYS CHECK THE QUALITY * </span>* ART ON MAPLE MATERPIECES *</span>
+        <span className="scrolling-texts"><span className="hollow-texts"> RECYCLED MATERIAL * </span>* RECYCLED MATERIALS *<span className="hollow-texts"> RECYCLED MATERIAL * </span></span>
+        <span className="scrolling-texts">* ART ON MAPLE MATERPIECES *<span className="hollow-texts"> ART ON MAPLE MASTERPIECES * </span>* ART ON MAPLE MATERPIECES *</span>
+      </div>
+    </header>
+  )
+}
+
+export default Header
+
+/* 
+<header onWheel={handleDirection} ref={header}>
+
+      <div className="img-container" 
+      style={{ animation: `${direction}Scale${count} 0.2s ease forwards`}}>
+        <img src={require('../img/header-img (3).jpg')} alt="Skater" />
+      </div>
+      <OverlayHero />
+
+      <div className="background-text-container">
+        <span className="scrolling-texts">* WE ALWAYS CHECK THE QUALITY *<span className="hollow-texts"> WE ALWAYS CHECK THE QUALITY * </span>* ART ON MAPLE MATERPIECES *</span>
+        <span className="scrolling-texts"><span className="hollow-texts"> RECYCLED MATERIAL * </span>* RECYCLED MATERIALS *<span className="hollow-texts"> RECYCLED MATERIAL * </span></span>
+        <span className="scrolling-texts">* ART ON MAPLE MATERPIECES *<span className="hollow-texts"> ART ON MAPLE MASTERPIECES * </span>* ART ON MAPLE MATERPIECES *</span>
+      </div>
+    </header>
+
   const [count, setCount] = useState(0);
   const [direction, setDirection] = useState('down');
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
 
   const header = useRef(null);
 
@@ -52,25 +98,4 @@ const Header = () => {
   }
 
   console.log(count);
-
-  // Header texts
-  // Giant title, description section, cta and downscroll button.
-
-  return (
-    <header onWheel={handleDirection} ref={header}>
-
-      <div className="img-container" 
-      style={{ animation: `${direction}Scale${count} 0.2s ease forwards`}}>
-        <img src={require('../img/header-img (3).jpg')} alt="Skater" />
-      </div>
-
-      <div className="background-text-container">
-        <span className="scrolling-texts">* WE ALWAYS CHECK THE QUALITY *<span className="hollow-texts"> WE ALWAYS CHECK THE QUALITY * </span>* ART ON MAPLE MATERPIECES *</span>
-        <span className="scrolling-texts"><span className="hollow-texts"> RECYCLED MATERIAL * </span>* RECYCLED MATERIALS *<span className="hollow-texts"> RECYCLED MATERIAL * </span></span>
-        <span className="scrolling-texts">* ART ON MAPLE MATERPIECES *<span className="hollow-texts"> ART ON MAPLE MASTERPIECES * </span>* ART ON MAPLE MATERPIECES *</span>
-      </div>
-    </header>
-  )
-}
-
-export default Header
+*/

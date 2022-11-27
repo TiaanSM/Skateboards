@@ -8,6 +8,8 @@ import Partner from './component/Partner/Partner';
 import Main from './component/Main/Main';
 
 import OpenMenu from './component/OpenMenu';
+import Info from './component/Info/Info';
+import OverlayHero from './component/Hero/OverlayHero';
 
 function App() {
 
@@ -25,6 +27,8 @@ function App() {
       </Routes>
   */}
       <Header />
+      <Main />
+      <Footer />
     </div>
       
   )
