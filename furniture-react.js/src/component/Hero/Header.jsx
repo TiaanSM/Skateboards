@@ -7,10 +7,8 @@ const Header = () => {
   const [count, setCount] = useState(0);
   const [direction, setDirection] = useState('down');
 
-
   const handleDirection = (event) => {
 
-  
     const value = event.deltaY;
 
     if (value > 0 && count <= 6) {
@@ -20,9 +18,11 @@ const Header = () => {
     } else if (value < 0 && count >= 1) {
       setCount((count) => count - 1);
       setDirection((direction) => direction = 'up');
+    } else {
+      setCount((count) => count + 1 - 1);
     }
-  } 
 
+  } 
 
   console.log(count);
   
@@ -31,7 +31,7 @@ const Header = () => {
     <header onWheel={handleDirection}>
       <div className="flex">
       <div  
-      className={count >= 7 ? ('.img-container') : ('.img-container-2')}
+      className={count < 7 ? 'img-container' : 'img-container-2'}
       style={{ animation: `${direction}Scale${count} 0.2s ease forwards`}}
       >
 

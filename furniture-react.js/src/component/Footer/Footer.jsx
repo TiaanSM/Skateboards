@@ -44,7 +44,7 @@ const Footer = () => {
       </form>
 
       <span className="footer-links">
-        <p className="footer-tag"> &copy; SKATEBOARDS / All Rights Reserved</p>
+        <p className="footer-tag"> &copy; SK8BOARDS / All Rights Reserved</p>
         <a href="/" className="footer-tag">Public offer</a>
 
         <span className="footer-social-links">

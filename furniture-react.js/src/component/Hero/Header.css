@@ -4,6 +4,8 @@ header {
     background-color: #def2f1;
     scroll-behavior: smooth;
     position: relative;
+    overflow: hidden;
+    margin-inline: auto;
 }
 
 .flex {
@@ -16,7 +18,7 @@ header {
 }
 
 .img-container {
-    width: 100%; 
+    width: 100vw; 
     height: auto;
     overflow: hidden;
     display: flex;
@@ -24,19 +26,19 @@ header {
     align-items: center;
     position: fixed;
     z-index: 1;
-    margin: auto;
 }
 
 .img-container-2 {
-    width: auto; 
+    width: 100vw; 
     height: auto;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    top: 100vh;
     z-index: 1;
-    margin: auto;
+    transition: all 1s ease forwards;
 }
 
 .header-img-1 {

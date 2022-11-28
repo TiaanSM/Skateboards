@@ -25,6 +25,7 @@ form {
     height: 50vh;
     display: grid;
     grid-template-columns: 1fr;
+    position: relative;
 }
 
 .input-border > label {
@@ -62,6 +63,7 @@ form {
     box-shadow: 3px 3px white;
     border: 1px solid white;
     animation: submit 0.5s ease forwards;
+    cursor: pointer;
 }
 
 #submit:hover {
@@ -99,6 +101,10 @@ form {
     font-family: sans-serif;
 }
 
+.social-link:hover {
+    text-decoration: underline;
+}
+
 @keyframes submitHover {
     0% {
         box-shadow: 2px 2px white ;
@@ -133,5 +139,57 @@ form {
 
     100% {
         box-shadow: 2px 2px white ;
+    }
+}
+
+@media (max-width: 460px) {
+    .footer-title {
+        font-size: 2rem;
+        padding-inline: 3rem;
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    footer {
+        height: auto;
+    }
+
+    .footer-title {
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+        padding-inline: 1rem;
+        margin-top: 5rem;
+    }
+
+    form {
+        height: 80vh;
+        margin-bottom: 15rem;
+    }
+
+    .input-border {
+        margin: 1rem 0rem;
+    }
+
+    .input-details {
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0rem;
+    }
+
+    .footer-links {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .footer-tag {
+        margin: 1rem 2rem;
+    }
+
+    .footer-social-links {
+        margin-left: 1rem;
     }
 }
