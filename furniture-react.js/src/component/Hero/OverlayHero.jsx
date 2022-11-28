@@ -3,7 +3,7 @@ import React from 'react'
 const OverlayHero = () => {
   return (
 
-    <div className="container-5">
+    <div className="text-overlay-container">
       <div className="text-container">
         <h2 className="special-title"><span>TRUE</span><br/> <span>SK8</span><br/> <span>BOA</span></h2>
       </div>

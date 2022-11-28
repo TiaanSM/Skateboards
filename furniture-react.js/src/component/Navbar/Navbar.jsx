@@ -28,8 +28,8 @@ const Navbar = () => {
         <span className="btn-theme catalogue-link">Skateboards</span>
 
         <span className="btn-theme menu" onClick={handleToggle}>
-          Menu
-          <svg width="20" height="11" viewBox="0 0 20 11" fill="#e84a5f" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H20V1H0V0ZM0 5H20V6H0V5ZM20 10H0V11H20V10Z"></path>
+          <span className="menu-text">Menu</span>
+          <svg className="hamburger-svg" width="20" height="11" viewBox="0 0 20 11" fill="#e84a5f" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H20V1H0V0ZM0 5H20V6H0V5ZM20 10H0V11H20V10Z"></path>
           <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H20V1H0V0ZM0 5H20V6H0V5ZM20 10H0V11H20V10Z"></path>
           </svg>
         </span>

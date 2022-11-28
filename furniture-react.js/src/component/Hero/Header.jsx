@@ -27,13 +27,19 @@ const Header = () => {
   console.log(count);
   
   return (
-    <header onWheel={handleDirection} className={count >= 7 ? ('header-2') : ('header-1')}>
+    
+    <header onWheel={handleDirection}>
+      <div className="flex">
+      <div  
+      className={count >= 7 ? ('.img-container') : ('.img-container-2')}
+      style={{ animation: `${direction}Scale${count} 0.2s ease forwards`}}
+      >
 
-      <div className="img-container" 
-      style={{ animation: `${direction}Scale${count} 0.2s ease forwards`}}>
         <img src={require('../img/header-img (3).jpg')} alt="Skater" />
-      </div>
 
+      </div>
+      </div>
+      <OverlayHero />
       <div className="background-text-container">
         <span className="scrolling-texts">* WE ALWAYS CHECK THE QUALITY *<span className="hollow-texts"> WE ALWAYS CHECK THE QUALITY * </span>* ART ON MAPLE MATERPIECES *</span>
         <span className="scrolling-texts"><span className="hollow-texts"> RECYCLED MATERIAL * </span>* RECYCLED MATERIALS *<span className="hollow-texts"> RECYCLED MATERIAL * </span></span>
@@ -46,6 +52,8 @@ const Header = () => {
 export default Header
 
 /* 
+
+
 
 
   
