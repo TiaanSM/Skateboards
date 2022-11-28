@@ -26,8 +26,7 @@ function App() {
           <Route path="/footer" element={ <Footer /> }></Route>
       </Routes>
   */}
-  <Header />
-      <Catalogue />
+  <Main/>
     </div>
       
   )

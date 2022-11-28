@@ -19,32 +19,19 @@ header {
 
 .img-container {
     width: 100vw; 
-    height: auto;
+    height: 100%;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
+    position: absolute;
     z-index: 1;
 }
 
-.img-container-2 {
-    width: 100vw; 
-    height: auto;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 100vh;
-    z-index: 1;
-    transition: all 1s ease forwards;
-}
 
 .header-img-1 {
     width: 100%;
     height: auto;
-    position: absolute;
 }
 
 .background-text-container {

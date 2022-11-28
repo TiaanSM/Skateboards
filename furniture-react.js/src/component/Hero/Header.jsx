@@ -3,41 +3,41 @@ import '../Hero/Header.css';
 import OverlayHero from './OverlayHero';
 
 const Header = () => {
-  
-  const [count, setCount] = useState(0);
-  const [direction, setDirection] = useState('down');
 
-  const handleDirection = (event) => {
+  const headerRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
 
-    const value = event.deltaY;
+  const callbackFunction = (entries) => {
+    const [entry] = entries
+    setIsVisible(entry.isIntersecting)
+  }
 
-    if (value > 0 && count <= 6) {
-      setCount((count) => count + 1);
-      setDirection((direction) => direction = 'down');
+  const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 1.0
+  }
 
-    } else if (value < 0 && count >= 1) {
-      setCount((count) => count - 1);
-      setDirection((direction) => direction = 'up');
-    } else {
-      setCount((count) => count + 1 - 1);
+  useEffect(() => {
+    const observer = new IntersectionObserver(callbackFunction, options)
+    if (headerRef.current) observer.observe(headerRef.current);
+
+    return () => {
+      if(headerRef.current) observer.unobserve(headerRef.current)
     }
+  }, [headerRef, options])
 
-  } 
-
-  console.log(count);
+  
   
   return (
     
-    <header onWheel={handleDirection}>
+    <header ref={headerRef} >
       <div className="flex">
-      <div  
-      className={count < 7 ? 'img-container' : 'img-container-2'}
-      style={{ animation: `${direction}Scale${count} 0.2s ease forwards`}}
-      >
+        <div className='img-container'>
 
-        <img src={require('../img/header-img (3).jpg')} alt="Skater" />
+        <img src={require('../img/header-img (3).jpg')} alt="Skater" className="header-img-1" />
 
-      </div>
+        </div>
       </div>
       <OverlayHero />
       <div className="background-text-container">
