@@ -1,37 +1,10 @@
-import React, { useState, useRef, useEffect } from 'react';
 import '../Hero/Header.css';
 import OverlayHero from './OverlayHero';
 
 const Header = () => {
-
-  const headerRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  const callbackFunction = (entries) => {
-    const [entry] = entries
-    setIsVisible(entry.isIntersecting)
-  }
-
-  const options = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 1.0
-  }
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(callbackFunction, options)
-    if (headerRef.current) observer.observe(headerRef.current);
-
-    return () => {
-      if(headerRef.current) observer.unobserve(headerRef.current)
-    }
-  }, [headerRef, options])
-
-  
-  
   return (
     
-    <header ref={headerRef} >
+    <header>
       <div className="flex">
         <div className='img-container'>
 
@@ -50,11 +23,3 @@ const Header = () => {
 }
 
 export default Header
-
-/* 
-
-
-
-
-  
-*/

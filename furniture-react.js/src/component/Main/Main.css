@@ -88,19 +88,25 @@
     transition: all 1s ease;
 }
 
-@keyframes slideImage {
-    0% {
-        transform: translateY(0px);
-    } 
-    100% {
-        transform: translateY(-200px);
+@media (max-width: 900px) {
+    .main-section-container {
+        grid-template-columns: 1fr;
     }
-}
 
-@keyframes popup {
-    from {
-        opacity: 0;
-    } to {
-        opacity: 1;
+    .main-title {
+        font-size: 2rem;
+        line-height: normal;
+        margin-bottom: 10rem;
+        padding: 1rem;
+    }
+
+    .main-img-1 {
+        width: 100%;
+        height: auto;
+        border-radius: 30rem 30rem 0 0;
+    }
+
+    .main-img-2, .main-img-3 {
+        display: none;
     }
 }

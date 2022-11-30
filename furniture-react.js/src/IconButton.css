@@ -1,0 +1,10 @@
+svg {
+    fill: none;
+    stroke: red;
+    transform: rotate(1080deg);
+    transition: all 10s;
+}
+
+svg:nth-child(3) {
+    fill: #333;
+}

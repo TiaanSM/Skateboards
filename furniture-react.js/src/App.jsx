@@ -10,6 +10,7 @@ import Main from './component/Main/Main';
 import OpenMenu from './component/OpenMenu';
 import Info from './component/Info/Info';
 import OverlayHero from './component/Hero/OverlayHero';
+import IconButton from './IconButton';
 
 function App() {
 
@@ -26,7 +27,7 @@ function App() {
           <Route path="/footer" element={ <Footer /> }></Route>
       </Routes>
   */}
-  <Main/>
+     <IconButton />
     </div>
       
   )
