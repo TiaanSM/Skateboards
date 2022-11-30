@@ -10,11 +10,6 @@ const Partner = () => {
   return (
     
     <section className="partner-section">
-        <div className="partner-img" >
-        <img src={require("../img/img-8.jpg")} alt="" />
-        </div>
-        
-        
         <h5 className="partner-title">WE LOVE<br/>PARTNERSHIP</h5>
         <p className="partner-desc">
             Situation: your place, be it a city cafe,<br/> deli or bar, has got everything in the world. Almost.

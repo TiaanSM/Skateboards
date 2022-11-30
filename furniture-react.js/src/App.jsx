@@ -27,7 +27,9 @@ function App() {
           <Route path="/footer" element={ <Footer /> }></Route>
       </Routes>
   */}
-     <IconButton />
+    <Main />
+     <Partner />
+     <Footer />
     </div>
       
   )

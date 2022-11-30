@@ -1,10 +1,26 @@
-svg {
-    fill: none;
-    stroke: red;
-    transform: rotate(1080deg);
-    transition: all 10s;
+
+
+.svg-container {
+    width: 1px;
+    height: 142px;
+    position: relative;
+    top: 10rem;
+    left: 20rem;
 }
 
-svg:nth-child(3) {
-    fill: #333;
+.svg-container > svg {
+    width: 142px;
+    height: 142px;
+    fill: none;
+    stroke: #e84a5f;
+    animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
