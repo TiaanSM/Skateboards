@@ -30,8 +30,8 @@
 }
 
 .main-img-1 {
-    width: 557.500px;
-    height: 780.500px;
+    width: 34.843rem;
+    height: 48.781rem;
     background-color: orange;
     border-radius: 20rem 20rem 0 0;
     overflow: hidden;
@@ -84,7 +84,7 @@
     background-color: white;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 56.25rem) {
     .main-section-container {
         grid-template-columns: 1fr;
     }
@@ -129,13 +129,13 @@
 .carousel-image {
     width: 100%;
     height: calc(28rem - 20px);
-    border-radius: 60px 0 0 0;
+    border-radius: 3.75rem 0 0 0;
     overflow: hidden;
 }
 
 .carousel-image:nth-child(even) {
     width: 100%;
-    height: calc(28rem - 20px);
+    height: calc(28rem - 1.25rem);
     background-color: red;
     border-radius: 0 60px 0 0;
     overflow: hidden;

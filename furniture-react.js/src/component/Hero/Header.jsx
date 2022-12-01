@@ -2,6 +2,13 @@ import '../Hero/Header.css';
 import OverlayHero from './OverlayHero';
 
 const Header = () => {
+
+  // get scroll value 
+  // get scroll direction
+  // use scroll direction to indicate + or -
+  // use the resize defualt value. 5vw , ?vh
+  // resize the image
+
   return (
     
     <header>
