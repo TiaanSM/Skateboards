@@ -72,20 +72,16 @@
 }
 
 .about-cta {
-    background-color: transparent;
-    width: 100px;
-    height: 70px;
-    border-radius: 0 1rem 0 1rem;
-    cursor: pointer;
-    border: 1px solid white;
-    color: white;
-    box-shadow: 0px 0px pink; 
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .about-cta:hover {
     background-color: white;
-    color: #e84a5f;
-    transition: all 1s ease;
 }
 
 @media (max-width: 900px) {
@@ -109,4 +105,38 @@
     .main-img-2, .main-img-3 {
         display: none;
     }
+}
+
+/*/ Carousel /*/
+
+.animated-carousel {
+    width: 100vw;
+    height: 28rem;
+    background-color: #e84a5f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    width: calc(100% - 2rem);
+    height: 27rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.carousel-image {
+    width: 100%;
+    height: calc(28rem - 20px);
+    border-radius: 60px 0 0 0;
+    overflow: hidden;
+}
+
+.carousel-image:nth-child(even) {
+    width: 100%;
+    height: calc(28rem - 20px);
+    background-color: red;
+    border-radius: 0 60px 0 0;
+    overflow: hidden;
 }

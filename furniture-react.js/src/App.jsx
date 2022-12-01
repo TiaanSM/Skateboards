@@ -11,6 +11,7 @@ import OpenMenu from './component/OpenMenu';
 import Info from './component/Info/Info';
 import OverlayHero from './component/Hero/OverlayHero';
 import IconButton from './IconButton';
+import Carousel from './component/Main/Carousel';
 
 function App() {
 
@@ -28,8 +29,6 @@ function App() {
       </Routes>
   */}
     <Main />
-     <Partner />
-     <Footer />
     </div>
       
   )
