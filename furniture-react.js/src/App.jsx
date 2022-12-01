@@ -7,7 +7,7 @@ import Catalogue from './component/Catalog/Catalogue';
 import Partner from './component/Partner/Partner';
 import Main from './component/Main/Main';
 
-import OpenMenu from './component/OpenMenu';
+import OpenMenu from './component/Navbar/OpenMenu';
 import Info from './component/Info/Info';
 import OverlayHero from './component/Hero/OverlayHero';
 import IconButton from './IconButton';
@@ -16,7 +16,7 @@ import Carousel from './component/Main/Carousel';
 function App() {
 
   return (
-    
+    // add react spring for animations.
     // colors: #e84a5f (pink), #def2f1 (lightblue)
     // css need to made scoped or replaced with styled components, or clean up and improve naming convention.
     
@@ -28,7 +28,7 @@ function App() {
           <Route path="/footer" element={ <Footer /> }></Route>
       </Routes>
   */}
-    <Header />
+    <Info />
     </div>
       
   )

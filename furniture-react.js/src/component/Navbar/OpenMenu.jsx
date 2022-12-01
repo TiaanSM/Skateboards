@@ -1,5 +1,5 @@
 import React from 'react'
-import '../component/OpenMenu.css';
+import './OpenMenu.css';
 
 const OpenMenu = ({ handleToggle }) => {
 

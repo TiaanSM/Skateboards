@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import OpenMenu from '../OpenMenu';
+import OpenMenu from './OpenMenu';
 import '../Navbar/Navbar.css';
 
 const Navbar = () => {

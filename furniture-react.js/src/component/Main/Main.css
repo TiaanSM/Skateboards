@@ -118,7 +118,7 @@
     align-items: center;
 }
 
-.image-container {
+.carousel-image-container {
     width: calc(100% - 2rem);
     height: 27rem;
     display: grid;
