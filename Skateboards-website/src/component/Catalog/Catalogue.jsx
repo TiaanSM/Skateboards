@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import CardDetails from '../CardDetails';
 import '../Catalog/Catalogue.css';
+import IconButton from '../../IconButton';
 
 const Modal = ({isOpen, onClose, CardDetails}) => {
 
@@ -80,7 +81,7 @@ const Catalogue = () => {
           }
         
         </div>
-        <a href="" className="catalog-cta">ALL DECKS</a>
+        <a href="">More</a>
     </main>
   )
 }

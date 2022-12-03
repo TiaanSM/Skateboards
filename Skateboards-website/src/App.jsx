@@ -21,14 +21,11 @@ function App() {
     // css need to made scoped or replaced with styled components, or clean up and improve naming convention.
     
     <div className="App">
+      
       <Navbar />
-      {/*
-      <Routes>
-          <Route path="/header" element={ <Header /> }></Route>
-          <Route path="/footer" element={ <Footer /> }></Route>
-      </Routes>
-  */}
-    <Info />
+  
+      <Header />
+     
     </div>
       
   )
