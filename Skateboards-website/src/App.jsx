@@ -6,6 +6,7 @@ import Footer from './component/Footer/Footer';
 import Catalogue from './component/Catalog/Catalogue';
 import Partner from './component/Partner/Partner';
 import Main from './component/Main/Main';
+import Location from './component/Location/Location';
 
 import OpenMenu from './component/Navbar/OpenMenu';
 import Info from './component/Info/Info';
@@ -23,8 +24,12 @@ function App() {
     <div className="App">
       
       <Navbar />
-  
       <Header />
+      <Main />
+      <Catalogue />
+      <Partner />
+      <Location />
+      <Footer />
      
     </div>
       

@@ -1,8 +1,13 @@
 import '../Hero/Header.css';
 import OverlayHero from './OverlayHero';
-import { useState, useEffect } from 'react';
+import { motion, useScroll } from 'framer-motion';
+
 
 const Header = () => {
+
+  // make header scroll able container => overflow-y: scroll;
+  // change to hidden on count 7.
+  
   return (
     
     <header>
