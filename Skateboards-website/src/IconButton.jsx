@@ -2,6 +2,7 @@ import React from 'react'
 import './IconButton.css'
 
 const IconButton = () => {
+  // replace chevron img with svg
   return (
   <button className="svg-container">
     <svg>
