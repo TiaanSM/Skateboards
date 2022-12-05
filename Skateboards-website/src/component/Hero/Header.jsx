@@ -1,22 +1,48 @@
 import '../Hero/Header.css';
 import OverlayHero from './OverlayHero';
-import { motion, useScroll } from 'framer-motion';
+import { useState, useEffect } from 'react';
 
 
 const Header = () => {
 
   // make header scroll able container => overflow-y: scroll;
   // change to hidden on count 7.
+  const [count, setCount] = useState(0);
+
+  const handleWheel = ({ deltaY }) => {
+
+    const increaseCount = () => {
+      if (count >= 7) {
+        console.log('count-limit');
+      } else {
+        setCount((count) => count + 1);
+      }
+    }
+
+    const decreaseCount = () => {
+      if (count > 0) {
+        setCount((count) => count - 1);
+      }
+    }
+
+    const wheel = deltaY > 0 ? increaseCount() : decreaseCount();
+
+    return wheel;
+  }
+
+  useEffect(() => {
+    console.log(count);
+  }, [count]);
   
   return (
     
-    <header>
+    <header onWheel={handleWheel}>
       <div className="flex">
-        <div className='img-container'>
-
-        <img src={require('../img/header-img (3).jpg')} alt="Skater" className="header-img-1" />
-
+    
+        <div className={`img-container-${count}`}>
+          <img src={require('../img/header-img (3).jpg')} alt="Skater" className="header-img-1" />
         </div>
+
       </div>
       <OverlayHero />
       <div className="background-text-container">
@@ -29,3 +55,41 @@ const Header = () => {
 }
 
 export default Header
+
+/*
+{ count === 1 &&
+        <div className='img-container-2'>
+          <img src={require('../img/header-img (3).jpg')} alt="Skater" className="header-img-1" />
+        </div>
+       }
+       { count === 2 &&
+        <div className='img-container-3'>
+          <img src={require('../img/header-img (3).jpg')} alt="Skater" className="header-img-1" />
+        </div>
+       }
+       { count === 3 &&
+        <div className='img-container-4'>
+          <img src={require('../img/header-img (3).jpg')} alt="Skater" className="header-img-1" />
+        </div>
+       }
+       { count === 4 &&
+        <div className='img-container-5'>
+          <img src={require('../img/header-img (3).jpg')} alt="Skater" className="header-img-1" />
+        </div>
+       }
+       { count === 5 &&
+        <div className='img-container-6'>
+          <img src={require('../img/header-img (3).jpg')} alt="Skater" className="header-img-1" />
+        </div>
+       }
+       { count === 6 &&
+        <div className='img-container-7'>
+          <img src={require('../img/header-img (3).jpg')} alt="Skater" className="header-img-1" />
+        </div>
+       }
+       { count === 7 &&
+        <div className='img-container-8'>
+          <img src={require('../img/header-img (3).jpg')} alt="Skater" className="header-img-1" />
+        </div>
+       }
+*/
