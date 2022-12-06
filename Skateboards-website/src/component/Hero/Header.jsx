@@ -1,12 +1,15 @@
 import '../Hero/Header.css';
 import OverlayHero from './OverlayHero';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import { useInView } from 'react-intersection-observer'; 
 
 
 const Header = () => {
 
   // make header scroll able container => overflow-y: scroll;
   // change to hidden on count 7.
+  // extract image container as component for less code here and reusability.
+  
   const [count, setCount] = useState(0);
 
   const handleWheel = ({ deltaY }) => {
@@ -33,16 +36,22 @@ const Header = () => {
   useEffect(() => {
     console.log(count);
   }, [count]);
+
+  const { ref, inView, entry } = useInView({  // currently working minor changes needed to improve header.
+    // optional options
+    threshold: 1,
+  });
+  console.log(inView);
   
   return (
     
     <header onWheel={handleWheel}>
       <div className="flex">
-    
-        <div className={`img-container-${count}`}>
+  
+        <div className={`img-container-${count}`} ref={ref}>
           <img src={require('../img/header-img (3).jpg')} alt="Skater" className="header-img-1" />
         </div>
-
+              
       </div>
       <OverlayHero />
       <div className="background-text-container">

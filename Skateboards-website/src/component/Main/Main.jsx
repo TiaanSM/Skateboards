@@ -1,22 +1,18 @@
 import '../Main/Main.css';
 import IconButton from '../../IconButton.jsx';
+import { useInView } from 'react-intersection-observer';
 
-const Carousel = () => {
 
-  return (
-    <section>
-      <div className="carousel-card-container">
-        /* 5 repeating cards sliding self */
-      </div>
-    </section>
-  )
-}
 
 const Main = () => {
 
   // main image = 557,500 x 780.500
 
   // carousel at the bottom of this section, auto moving.
+
+  // add intersection abserver details.
+  // add carousel and finnish it.
+
   return (
     <article className="main-section">
 
