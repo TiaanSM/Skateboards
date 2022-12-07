@@ -1,6 +1,6 @@
 import React from 'react'
 import './Location.css';
-import IconButton from '../../IconButton';
+import IconButton from '../General/IconButton';
 import Map_Svg from './Map_Svg';
 
 const Location = () => {

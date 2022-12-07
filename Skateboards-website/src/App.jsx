@@ -12,7 +12,7 @@ import Footer from './component/Footer/Footer';
 import OpenMenu from './component/Navbar/OpenMenu';
 import Info from './component/Info/Info';
 import OverlayHero from './component/Hero/OverlayHero';
-import IconButton from './IconButton';
+import IconButton from './component/General/IconButton';
 import Carousel from './component/Main/Carousel';
 
 function App() {

@@ -1,68 +1,88 @@
-
-.container {
+.info-container {
     width: 100vw;
-    height: 300vh;
+    height: 200vh;
     position: relative;
+    background-color: #def2f1;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: lightblue;
+    justify-content: center;
+    font-family: sans-serif;
   }
   
   .centerpiece {
-    width: 250px;
-    height: 350px;
-    background-color: #333;
-    margin-top: 4rem;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.301);
+    display: flex;
+    justify-content: center;
+    position: relative;
   }
   
+  .video-container {
+    width: 40rem;
+    height: 25rem;
+    background-color: #333;
+    position: absolute;
+  }
+
+  .video-moving-container {
+    width: 40rem;
+    height: 25rem;
+    background-color: red;
+    position: sticky;
+    top: 6rem;
+  }
+
+  .info-text-container {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    left: 5rem;
+  }
+
   .top-paragraph {
     width: 300px;
     height: auto;
+    color: #e84a5f;
     position: absolute;
-    top: 10rem;
-    left: 4rem;
-    color: hotpink;
+    top: 5rem;
   }
   
   .question-paragraph {
     width: 300px;
     height: auto;
     position: absolute;
-    right: 4rem;
-    top: 10rem;
+    top: 23rem;
   }
   
   .question-title {
     font-size: 3rem;
-    color: hotpink;
+    color: #e84a5f;
   }
   
   .question-desc {
-    color: hotpink;
+    color: #e84a5f;
   }
   
   .question-btn {
     padding: 0.5rem 1rem;
-    color: hotpink;
-    box-shadow: 3px 3px hotpink;
-    border: 1px solid hotpink;
-    background-color: lightblue;
+    color: #e84a5f;
+    box-shadow: 3px 3px #e84a5f;
+    border: 1px solid #e84a5f;
+    background-color: #def2f1;
   }
   
   .last-paragraph {
     width: 300px;
     height: auto;
     position: absolute;
-    left: 4rem;
-    bottom: 20rem;
+    bottom: 5rem;
   }
   
   .last-title {
-    color: hotpink;
+    color: #e84a5f;
     font-size: 3rem;
   }
   
   .last-desc {
-    color: hotpink;
+    color: #e84a5f;
   }

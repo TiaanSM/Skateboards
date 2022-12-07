@@ -1,5 +1,5 @@
 import '../Main/Main.css';
-import IconButton from '../../IconButton.jsx';
+import IconButton from '../General/IconButton.jsx';
 import { useInView } from 'react-intersection-observer';
 
 

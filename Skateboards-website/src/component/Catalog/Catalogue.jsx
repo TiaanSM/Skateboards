@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import CardDetails from '../CardDetails';
 import '../Catalog/Catalogue.css';
-import IconButton from '../../IconButton';
+import IconButton from '../General/IconButton';
 
 const Modal = ({isOpen, onClose, CardDetails}) => {
 
@@ -81,7 +81,7 @@ const Catalogue = () => {
           }
         
         </div>
-        <a href="">More</a>
+        <IconButton />
     </main>
   )
 }
