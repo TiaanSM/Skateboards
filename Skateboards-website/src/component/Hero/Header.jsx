@@ -14,6 +14,8 @@ const Header = () => {
 
   const handleWheel = ({ deltaY }) => {
 
+    if (inView) {
+
     const increaseCount = () => {
       if (count >= 7) {
         console.log('count-limit');
@@ -31,6 +33,7 @@ const Header = () => {
     const wheel = deltaY > 0 ? increaseCount() : decreaseCount();
 
     return wheel;
+    } 
   }
 
   useEffect(() => {
@@ -39,7 +42,7 @@ const Header = () => {
 
   const { ref, inView, entry } = useInView({  // currently working minor changes needed to improve header.
     // optional options
-    threshold: 1,
+    threshold: 0.90,
   });
   console.log(inView);
   
@@ -66,39 +69,5 @@ const Header = () => {
 export default Header
 
 /*
-{ count === 1 &&
-        <div className='img-container-2'>
-          <img src={require('../img/header-img (3).jpg')} alt="Skater" className="header-img-1" />
-        </div>
-       }
-       { count === 2 &&
-        <div className='img-container-3'>
-          <img src={require('../img/header-img (3).jpg')} alt="Skater" className="header-img-1" />
-        </div>
-       }
-       { count === 3 &&
-        <div className='img-container-4'>
-          <img src={require('../img/header-img (3).jpg')} alt="Skater" className="header-img-1" />
-        </div>
-       }
-       { count === 4 &&
-        <div className='img-container-5'>
-          <img src={require('../img/header-img (3).jpg')} alt="Skater" className="header-img-1" />
-        </div>
-       }
-       { count === 5 &&
-        <div className='img-container-6'>
-          <img src={require('../img/header-img (3).jpg')} alt="Skater" className="header-img-1" />
-        </div>
-       }
-       { count === 6 &&
-        <div className='img-container-7'>
-          <img src={require('../img/header-img (3).jpg')} alt="Skater" className="header-img-1" />
-        </div>
-       }
-       { count === 7 &&
-        <div className='img-container-8'>
-          <img src={require('../img/header-img (3).jpg')} alt="Skater" className="header-img-1" />
-        </div>
-       }
+
 */

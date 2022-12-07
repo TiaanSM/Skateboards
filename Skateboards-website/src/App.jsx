@@ -2,11 +2,12 @@ import { Routes, Route } from 'react-router-dom';
 
 import Navbar from './component/Navbar/Navbar';
 import Header from './component/Hero/Header'
-import Footer from './component/Footer/Footer';
+import Main from './component/Main/Main';
 import Catalogue from './component/Catalog/Catalogue';
 import Partner from './component/Partner/Partner';
-import Main from './component/Main/Main';
 import Location from './component/Location/Location';
+import FooterImage from './component/FooterImage/FooterImage';
+import Footer from './component/Footer/Footer';
 
 import OpenMenu from './component/Navbar/OpenMenu';
 import Info from './component/Info/Info';
@@ -29,6 +30,8 @@ function App() {
       <Catalogue />
       <Partner />
       <Location />
+      <Info />
+      <FooterImage />
       <Footer />
      
     </div>
