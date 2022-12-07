@@ -1,4 +1,4 @@
-.svg-container {
+.primary-button-container {
     width: 8.875rem;
     height: 8.875rem;
     position: relative;
@@ -11,29 +11,24 @@
     background-color: transparent;
 }
 
-.svg-container > svg {
+.primary-button-container > svg {
     width: 8.875rem;
     height: 8.875rem;
     fill: none;
-    stroke: white;
+    stroke: #e84a5f;
     animation: rotation 20s infinite linear;
 }
 
-.svg-container > svg:nth-child(2) {
+.primary-button-container > svg:nth-child(2) {
     position: absolute;
     animation: reverseRotation 20s infinite linear;
     animation: rotation 10s infinite linear;
 }
 
-.svg-container > span {
+.primary-button-container > img {
     position: absolute;
-    width: 5rem;
-    height: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.1rem;
-    color: white;
+    width: 2rem;
+    height: 2rem;
 }
 
 @keyframes rotation {

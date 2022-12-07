@@ -22,7 +22,7 @@ const Info = () => {
     <div className="info-container">
 
       <div className="centerpiece" ref={ref} >
-        <div className={classNameChange} ></div>
+        <div className={classNameChange}></div>
       </div>
 
       <div className="info-text-container">
