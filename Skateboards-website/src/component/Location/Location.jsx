@@ -8,7 +8,7 @@ const Location = () => {
     <section className="locations-section">
         <div className="text-container-place">
             <h3 className="locations-title">YOU NEED TO TRUST YOUR OWN EXPERIENCE. VISIT ONE OF OUR POINTS OF SALE.</h3>
-            <ButtonPrimary />
+            <ButtonPrimary text="WHERE TO FIND"/>
         </div>
         <div className="map-container">
             <Map_Svg />

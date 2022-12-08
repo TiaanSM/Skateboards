@@ -1,5 +1,6 @@
 import './Info.css';
 import { useInView } from 'react-intersection-observer'; 
+import styled from 'styled-components';
 
 const Info = () => {
 
@@ -16,13 +17,11 @@ const Info = () => {
   });
   console.log(inView);
 
-  const classNameChange = inView ? 'video-moving-container' : 'video-container';
-
   return (
     <div className="info-container">
 
-      <div className="centerpiece" ref={ref} >
-        <div className={classNameChange}></div>
+      <div className="centerpiece" ref={ref}>
+        <div className="video-container"></div>
       </div>
 
       <div className="info-text-container">
@@ -51,3 +50,7 @@ const Info = () => {
 }
    
 export default Info;
+
+/*
+inView ? 'video-moving-container' : 'video-container';
+*/

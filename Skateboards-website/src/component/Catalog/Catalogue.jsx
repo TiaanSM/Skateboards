@@ -81,7 +81,7 @@ const Catalogue = () => {
           }
         
         </div>
-        <ButtonPrimary />
+        <ButtonPrimary text="ALL DECKS"/>
     </main>
   )
 }

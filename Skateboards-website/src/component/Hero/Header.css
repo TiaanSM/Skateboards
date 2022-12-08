@@ -19,7 +19,7 @@ header {
 
 /*/ scrolling image container /*/
 .img-container-0 {
-    width: 100%; 
+    width: 100vw; 
     height: 100vh;
     overflow: hidden;
     display: flex;
@@ -27,7 +27,7 @@ header {
     align-items: center;
     position: fixed;
     z-index: 1;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 
 .img-container-1 {
@@ -39,7 +39,7 @@ header {
     align-items: center;
     position: fixed;
     z-index: 1;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 .img-container-2 {
     width: 80vw; 
@@ -50,7 +50,7 @@ header {
     align-items: center;
     position: fixed;
     z-index: 1;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 .img-container-3 {
     width: 70vw; 
@@ -61,7 +61,7 @@ header {
     align-items: center;
     position: fixed;
     z-index: 1;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 .img-container-4 {
     width: 65vw; 
@@ -72,7 +72,7 @@ header {
     align-items: center;
     position: fixed;
     z-index: 1;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 .img-container-5 {
     width: 60vw; 
@@ -83,7 +83,7 @@ header {
     align-items: center;
     position: fixed;
     z-index: 1;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 .img-container-6 {
     width: 55vw; 
@@ -94,7 +94,7 @@ header {
     align-items: center;
     position: fixed;
     z-index: 1;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 .img-container-7 {
     width: 50vw; 
@@ -106,7 +106,7 @@ header {
     position: absolute;
     top: 100vh;
     z-index: 1;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 
 .header-img-1 {

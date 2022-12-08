@@ -25,10 +25,14 @@
     animation: rotation 10s infinite linear;
 }
 
-.primary-button-container > img {
+.primary-button-container > span {
     position: absolute;
-    width: 2rem;
-    height: 2rem;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e84a5f;
 }
 
 @keyframes rotation {

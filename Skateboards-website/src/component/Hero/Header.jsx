@@ -42,7 +42,7 @@ const Header = () => {
 
   const { ref, inView, entry } = useInView({  // currently working minor changes needed to improve header.
     // optional options
-    threshold: 0.90,
+    threshold: 0.95,
   });
   console.log(inView);
   
@@ -57,6 +57,7 @@ const Header = () => {
               
       </div>
       <OverlayHero />
+      
       <div className="background-text-container">
         <span className="scrolling-texts">* WE ALWAYS CHECK THE QUALITY *<span className="hollow-texts"> WE ALWAYS CHECK THE QUALITY * </span>* ART ON MAPLE MATERPIECES *</span>
         <span className="scrolling-texts"><span className="hollow-texts"> RECYCLED MATERIAL * </span>* RECYCLED MATERIALS *<span className="hollow-texts"> RECYCLED MATERIAL * </span></span>
