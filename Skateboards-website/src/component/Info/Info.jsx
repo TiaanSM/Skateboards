@@ -1,6 +1,6 @@
 import './Info.css';
-import { useInView } from 'react-intersection-observer'; 
-import styled from 'styled-components';
+import React, { useRef, useEffect } from "react";
+import ImageScroll from './ImageScroll';
 
 const Info = () => {
 
@@ -11,18 +11,18 @@ const Info = () => {
 
   // intersection observer
 
-  const { ref, inView, entry } = useInView({  // currently working minor changes needed to improve header.
-    // optional options
-    threshold: 0.40,
-  });
-  console.log(inView);
+  
 
   return (
     <div className="info-container">
 
-      <div className="centerpiece" ref={ref}>
-        <div className="video-container"></div>
-      </div>
+      
+      <ImageScroll
+        startPosition={100}
+        endPosition={500}
+        src="https://example.com/image.png"
+      />
+      
 
       <div className="info-text-container">
       <p className="top-paragraph">

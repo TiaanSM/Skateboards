@@ -138,6 +138,15 @@ main {
     box-shadow: 2px 2px #e84a5f;
     background-color: white;
     cursor: pointer;
+    animation: button-modal 0.5s ease forwards;
+}
+
+.exit-modal:hover {
+    animation: btnHover-modal 0.5s ease forwards;
+}
+
+.exit-modal:hover > svg {
+    fill: white;
 }
 
 .modal-inputs {
@@ -158,6 +167,11 @@ main {
     background-color: #def2f1;
     box-shadow: 2px 2px #e84a5f;
     cursor: pointer;
+    animation: button-modal 0.5s ease forwards;
+}
+
+.minus-btn:hover {
+    animation: btnHover-modal 0.5s ease forwards;
 }
 
 .amount-input {
@@ -179,6 +193,11 @@ main {
     background-color: #def2f1;
     box-shadow: 2px 2px #e84a5f;
     cursor: pointer;
+    animation: button-modal 0.5s ease forwards;
+}
+
+.plus-btn:hover {
+    animation: btnHover-modal 0.5s ease forwards;
 }
 
 .add-btn {
@@ -190,6 +209,11 @@ main {
     background-color: #def2f1;
     box-shadow: 2px 2px #e84a5f;
     cursor: pointer;
+    animation: button-modal 0.5s ease forwards;
+}
+
+.add-btn:hover {
+    animation: btnHover-modal 0.5s ease forwards;
 }
 
 @media (max-width: 1000px) {
@@ -234,5 +258,42 @@ main {
 
     .card:nth-child(8) {
         display: none;
+    }
+}
+
+@keyframes btnHover-modal {
+    0% {
+        box-shadow: 2px 2px #e84a5f ;
+    }
+    10% {
+        box-shadow: 0px 0px;
+    }
+    15% {
+        box-shadow: inset 0px 0px;
+    }
+    100% {
+        transform: translate(2px, 2px);
+        box-shadow: inset 0 -51px 0 0 #e84a5f;
+        color: white;
+    }
+}
+
+@keyframes button-modal {
+    0% {
+        transform: translate(2px, 2px);
+        box-shadow: inset 0 -51px 0 0 #e84a5f;
+        color: white;
+    }
+
+    85% {
+    box-shadow: inset 0px 0px;
+    }
+
+    90% {
+        box-shadow: 0px 0px;
+    }
+
+    100% {
+        box-shadow: 2px 2px #e84a5f ;
     }
 }
