@@ -1,74 +1,61 @@
 .info-container {
     width: 100vw;
-    height: 200vh;
+    height: auto;
     position: relative;
     background-color: #def2f1;
-    display: flex;
-    justify-content: center;
     font-family: sans-serif;
   }
-  
-  .centerpiece {
-    width: 50%;
-    height: 100%;
+
+  .video-container {
+    width: 500px;
+    height: 385px;
+    background-color: #333;
+    border: 1px solid red;
+    padding: 1rem;
+  }
+
+  .container-text {
+    width: 100vw;
+    height: 9rem;
     display: flex;
     justify-content: center;
-    position: relative;
-  }
-  
-  .video-container {
-    width: 40rem;
-    height: 25rem;
-    background-color: #333;
-    position: absolute;
-  }
-
-  .video-moving-container {
-    width: 40rem;
-    height: 25rem;
-    background-color: red;
-    position: sticky;
-    top: 6rem;
-  }
-
-  .started {
-    position: absolute;
-  }
-
-  .ended {
-    position: absolute;
-    bottom: 2rem;
-  }
-
-  .info-text-container {
-    width: 50%;
-    height: 100%;
-    position: relative;
-    left: 5rem;
+    align-items: center;
   }
 
   .top-paragraph {
-    width: 300px;
+    width: 500px;
     height: auto;
     color: #e84a5f;
-    position: absolute;
-    top: 5rem;
+    text-align: center;
+  }
+
+  .info-main-container {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding-bottom: 5rem;
   }
   
   .question-paragraph {
-    width: 300px;
+    width: 320px;
     height: auto;
-    position: absolute;
-    top: 23rem;
+    border: 1px solid red;
+    padding: 1rem;
   }
   
   .question-title {
     font-size: 3rem;
     color: #e84a5f;
+    padding-bottom: 1rem;
   }
   
   .question-desc {
     color: #e84a5f;
+    padding-bottom: 1rem;
   }
   
   .question-btn {
@@ -80,15 +67,16 @@
   }
   
   .last-paragraph {
-    width: 300px;
+    width: 320px;
     height: auto;
-    position: absolute;
-    bottom: 5rem;
+    border: 1px solid red;
+    padding: 1rem;
   }
   
   .last-title {
     color: #e84a5f;
     font-size: 3rem;
+    padding-bottom: 1rem;
   }
   
   .last-desc {

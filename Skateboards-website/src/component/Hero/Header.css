@@ -1,6 +1,6 @@
 header {
     width: 100vw;
-    height: 200vh;
+    height: auto;
     background-color: #def2f1;
     scroll-behavior: smooth;
     position: relative;
@@ -117,7 +117,7 @@ header {
 .background-text-container {
     width: 100vw;
     height: 100vh;
-    font-size: 5rem;
+    font-size: 6rem;
     background-color: transparent;
     display: flex;
     justify-content: center;
@@ -129,6 +129,7 @@ header {
     transform: rotate(-5deg);
     overflow: hidden;
     z-index: -10;
+    padding-bottom: 4rem;
 }
 
 .scrolling-texts {

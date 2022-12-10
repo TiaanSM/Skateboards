@@ -56,8 +56,9 @@ const Header = () => {
         </div>
               
       </div>
-      <OverlayHero />
       
+      <OverlayHero />
+
       <div className="background-text-container">
         <span className="scrolling-texts">* WE ALWAYS CHECK THE QUALITY *<span className="hollow-texts"> WE ALWAYS CHECK THE QUALITY * </span>* ART ON MAPLE MATERPIECES *</span>
         <span className="scrolling-texts"><span className="hollow-texts"> RECYCLED MATERIAL * </span>* RECYCLED MATERIALS *<span className="hollow-texts"> RECYCLED MATERIAL * </span></span>

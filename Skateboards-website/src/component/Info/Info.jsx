@@ -1,6 +1,5 @@
 import './Info.css';
-import React, { useRef, useEffect } from "react";
-import ImageScroll from './ImageScroll';
+
 
 const Info = () => {
 
@@ -15,20 +14,15 @@ const Info = () => {
 
   return (
     <div className="info-container">
-
-      
-      <ImageScroll
-        startPosition={100}
-        endPosition={500}
-        src="https://example.com/image.png"
-      />
-      
-
-      <div className="info-text-container">
+     
+      <div className="container-text">
       <p className="top-paragraph">
         Do you want to become our partner? We are open to cooperation, but first we always get acquainted with the location to find "our own". So no offense -           there are also cases when we are destined to grow separately.
       </p>
-      
+      </div>
+
+    <div className="info-main-container">
+
       <div className="question-paragraph">
         <h3 className="question-title">DEAL? THEN FILL OUT THE FORM</h3>
         <p className="question-desc">
@@ -37,6 +31,8 @@ const Info = () => {
         </p>
         <button className="question-btn">Fill out the questionnaire</button>
       </div>
+
+      <div className="video-container"></div>
       
       <div className="last-paragraph">
         <h3 className="last-title">IT REMAINS TO WAIT FOR THE LETTER</h3>
@@ -44,8 +40,10 @@ const Info = () => {
           After filling out the questionnaire, our manager will process it and send you detailed information about cooperation. This includes prices, equipment           rental conditions, and recommended retail price. After that we will be able to start. Even if the stars are not aligned and we are not on the way yet,           we will still write to you.
         </p>
       </div>
-     </div>
-     </div>
+    
+    </div>
+
+    </div>
   )
 }
    
