@@ -17,6 +17,13 @@ header {
     position: absolute;
 }
 
+.container-trigger {
+    width: 100vw;
+    height: 200px;
+    position: absolute;
+    top: calc(100vh - 100px);
+}
+
 /*/ scrolling image container /*/
 .img-container-0 {
     width: 100vw; 
@@ -32,7 +39,7 @@ header {
 
 .img-container-1 {
     width: 90vw; 
-    height: 97vh;
+    height: 98vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -43,7 +50,7 @@ header {
 }
 .img-container-2 {
     width: 80vw; 
-    height: 94vh;
+    height: 96vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -54,7 +61,7 @@ header {
 }
 .img-container-3 {
     width: 70vw; 
-    height: 91vh;
+    height: 94vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -65,7 +72,7 @@ header {
 }
 .img-container-4 {
     width: 65vw; 
-    height: 89vh;
+    height: 92vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -76,7 +83,7 @@ header {
 }
 .img-container-5 {
     width: 60vw; 
-    height: 86vh;
+    height: 90vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -87,7 +94,7 @@ header {
 }
 .img-container-6 {
     width: 55vw; 
-    height: 83vh;
+    height: 88vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -98,7 +105,7 @@ header {
 }
 .img-container-7 {
     width: 50vw; 
-    height: 80vh;
+    height: 86vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -190,7 +197,7 @@ header {
     height: auto;
     padding-top: 5.25rem;
     padding-bottom: 2rem;
-    color:  #def2f1;
+    color: #def2f1;
   }
   
   .title-tail {

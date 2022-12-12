@@ -1,7 +1,7 @@
 .locations-section {
     width: 100vw;
     height: 100vh;
-    background-color: #def2f1;
+    background-color: #FBECEB;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +14,7 @@
 }
 
 .locations-title {
-    color: #e84a5f;
+    color: #002447;
     font-size: 2.5rem;
     padding: 5rem 1rem 2rem 2rem;
 }
@@ -28,5 +28,6 @@
 }
 
 .location-cta {
-    padding-left: 2rem;
+    position: relative;
+    right: 3rem;
 }
