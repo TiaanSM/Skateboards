@@ -1,5 +1,15 @@
 import '../Footer/Footer.css';
-import * as Styles from './stylesFooter';
+import {FooterSection, 
+  FooterTitle, 
+  Form, 
+  Label, 
+  Input, 
+  InputDetails, 
+  Submit, 
+  FooterLinks, 
+  FooterTag, 
+  InputBorder, 
+  FooterSocialLink} from './stylesFooter';
 
 const Footer = () => {
 

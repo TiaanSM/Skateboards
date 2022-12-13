@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Partner/Partner.css';
+import { PartnerSection, PartnerTitle, PartnerDesc } from './stylesPartner';
 
 
 const Partner = () => {
@@ -9,13 +9,13 @@ const Partner = () => {
 
   return (
     
-    <section className="partner-section">
-        <h5 className="partner-title">WE LOVE<br/>PARTNERSHIP</h5>
-        <p className="partner-desc">
+    <PartnerSection className="partner-section">
+        <PartnerTitle className="partner-title">WE LOVE<br/>PARTNERSHIP</PartnerTitle>
+        <PartnerDesc className="partner-desc">
             Situation: your place, be it a city cafe,<br/> deli or bar, has got everything in the world. Almost.
             It is quite<br/> possible that you lack mr.pops. And this can be fixed.
-        </p>
-    </section>
+        </PartnerDesc>
+    </PartnerSection>
 
   )
 }

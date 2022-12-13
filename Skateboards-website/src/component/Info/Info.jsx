@@ -1,4 +1,18 @@
 import './Info.css';
+import {
+  InfoContainer,
+  VideoContainer,
+  ContainerText,
+  TopParagraph,
+  InfoMainContainer,
+  QuestionParagraph,
+  QuestionTitle,
+  QuestionBtn,
+  QuestionDesc,
+  LastParagraph,
+  LastTitle,
+  LastDesc
+} from './stylesInfo';
 
 
 const Info = () => {
@@ -13,7 +27,7 @@ const Info = () => {
   
 
   return (
-    <div className="info-container">
+    <InfoContainer className="info-container">
      
       <div className="container-text">
       <p className="top-paragraph">
@@ -43,7 +57,7 @@ const Info = () => {
     
     </div>
 
-    </div>
+    </InfoContainer>
   )
 }
    

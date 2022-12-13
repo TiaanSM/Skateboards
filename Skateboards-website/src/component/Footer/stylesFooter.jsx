@@ -1,7 +1,6 @@
 import styled, { keyframes } from "styled-components";
-import { Keyframes } from "styled-components";
 
-export const Footer = styled.footer`
+export const FooterSection = styled.footer`
     width: 100vw;
     height: 100vh;
     background-color: #e84a5f;
