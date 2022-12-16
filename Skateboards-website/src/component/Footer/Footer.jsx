@@ -1,15 +1,4 @@
-import '../Footer/Footer.css';
-import {FooterSection, 
-  FooterTitle, 
-  Form, 
-  Label, 
-  Input, 
-  InputDetails, 
-  Submit, 
-  FooterLinks, 
-  FooterTag, 
-  InputBorder, 
-  FooterSocialLink} from './stylesFooter';
+import '../Footer/Footer.module.css';
 
 const Footer = () => {
 

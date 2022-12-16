@@ -1,17 +1,6 @@
 import '../Main/Main.css';
 import IconButton from '../General/IconButton.jsx';
-import { useInView } from 'react-intersection-observer';
-import {
-  MainSection,
-  MainTitle,
-  MainSectionContainer,
-  ImageContainer,
-  MainImage1,
-  MainImage2,
-  MainImage3,
-  MainTextTitle,
-  MainTextDesc
-} from './stylesMain'
+
 
 
 

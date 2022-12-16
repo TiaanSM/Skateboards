@@ -26,7 +26,6 @@ function App() {
       
       <Navbar />
       <Header />
-      <Main />
       <Catalogue />
       <Partner />
       <Location />
