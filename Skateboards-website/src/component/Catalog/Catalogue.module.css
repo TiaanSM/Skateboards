@@ -1,4 +1,4 @@
-main {
+.main {
     width: 100vw;
     height: auto;
     background-color: #def2f1;
@@ -10,13 +10,13 @@ main {
     font-family: sans-serif;
 }
 
-.section-title {
+.title {
     font-size: 5.875rem;
     color: #e84a5f;
     margin-bottom: 3rem;
 }
 
-.card-container {
+.cardContainer {
     width: calc(100vw - 4rem);
     height: auto;
     display: grid;
@@ -43,17 +43,17 @@ main {
     height: auto;
 }
 
-.board-name, .board-price  {
+.boardName, .boardPrice  {
     font-size: 1.2rem;
     color: #e84a5f;
     margin-left: 2rem;
 }
 
-.board-size {
+.boardSize {
     margin: 0.5rem 0rem 0.5rem 2rem;
 }
 
-.add-to-cart {
+.addToCart {
     position: absolute;
     right: 2rem;
     bottom: 2.8rem;
@@ -62,19 +62,6 @@ main {
     border: none;
     background-color: #e84a5f;
     cursor: pointer;
-}
-
-.catalog-cta {
-    width: 8rem;
-    height: 8rem;
-    border: 5px solid #e84a5f;
-    text-decoration: none;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    margin: 2rem 0rem 2rem 0rem;
 }
 
 /* Modal */
@@ -93,30 +80,30 @@ main {
     left: 0px;
 }
 
-.cart-card {
+.modalCard {
     width: auto;
     height: auto;
     background-color: white;
 }
 
-.item-details {
+.itemDetails {
     width: 400px;
     background-color: white;
     padding: 1rem 3rem 0rem 3rem;
     position: relative;
 }
 
-.item-name {
+.boardName {
     font-size: 2rem;
     margin: 1rem 0rem 0.5rem 0rem;
     color: #e84a5f;
 }
 
-.item-size {
+.boardSize {
     padding-bottom: 1rem;
 }
 
-.item-price {
+.boardPrice {
     font-size: 2rem;
     position: absolute;
     right: 0rem;
@@ -124,7 +111,7 @@ main {
     color: #e84a5f;
 }
 
-.exit-modal {
+.exitModal {
     width: 40px;
     height: 40px;
     display: flex;
@@ -141,15 +128,15 @@ main {
     animation: button-modal 0.5s ease forwards;
 }
 
-.exit-modal:hover {
+.exitModal:hover {
     animation: btnHover-modal 0.5s ease forwards;
 }
 
-.exit-modal:hover > svg {
+.exitModal:hover > svg {
     fill: white;
 }
 
-.modal-inputs {
+.modalInputs {
     display: inline-block;
     padding: 2rem 3rem 3rem 3rem;
     height: 51px;
@@ -158,7 +145,7 @@ main {
     align-items: center;
 }
 
-.minus-btn {
+.minusButton {
     width: 51px;
     height: 51px;
     margin-right: 0.5rem;
@@ -170,11 +157,11 @@ main {
     animation: button-modal 0.5s ease forwards;
 }
 
-.minus-btn:hover {
+.minusButton:hover {
     animation: btnHover-modal 0.5s ease forwards;
 }
 
-.amount-input {
+.amountInput {
     width: 51px;
     height: 51px;
     padding: 1rem;
@@ -184,7 +171,7 @@ main {
     box-shadow: 2px 2px #e84a5f;
 }
 
-.plus-btn {
+.plusButton {
     width: 51px;
     height: 51px;
     margin-inline: 0.5rem;
@@ -196,11 +183,11 @@ main {
     animation: button-modal 0.5s ease forwards;
 }
 
-.plus-btn:hover {
+.plusButton:hover {
     animation: btnHover-modal 0.5s ease forwards;
 }
 
-.add-btn {
+.addToCart {
     width: 10rem;
     height: 51px;
     margin-left: 0.5rem;
@@ -212,12 +199,12 @@ main {
     animation: button-modal 0.5s ease forwards;
 }
 
-.add-btn:hover {
+.addToCart:hover {
     animation: btnHover-modal 0.5s ease forwards;
 }
 
 @media (max-width: 1000px) {
-    .card-container {
+    .cardContainer {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
@@ -232,7 +219,7 @@ main {
 }
 
 @media (max-width: 800px) {
-    .card-container {
+    .cardContainer {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
@@ -247,7 +234,7 @@ main {
 }
 
 @media (max-width: 640px) {
-    .card-container {
+    .cardContainer {
         grid-template-columns: 1fr ;
         grid-template-rows: auto;
     }

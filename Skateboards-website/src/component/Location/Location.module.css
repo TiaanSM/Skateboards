@@ -1,33 +1,28 @@
-.locations-section {
+.section {
     width: 100vw;
     height: 100vh;
-    background-color: #FBECEB;
+    background-color: #def2f1;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
 }
 
-.text-container-place {
+.textContainer {
     width: 44%;
     height: 100%;
 }
 
-.locations-title {
-    color: #002447;
+.title {
+    color: #e84a5f;
     font-size: 2.5rem;
     padding: 5rem 1rem 2rem 2rem;
 }
 
-.map-container {
+.mapContainer {
     width: 56%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.location-cta {
-    position: relative;
-    right: 3rem;
 }
