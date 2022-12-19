@@ -52,3 +52,40 @@
         transform: rotate(-540deg);
     }
 }
+
+.svg-container {
+    width: 8.875rem;
+    height: 8.875rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.svg-container > svg {
+    width: 8.875rem;
+    height: 8.875rem;
+    fill: none;
+    stroke: white;
+    animation: rotation 20s infinite linear;
+}
+
+.svg-container > svg:nth-child(2) {
+    position: absolute;
+    animation: reverseRotation 20s infinite linear;
+    animation: rotation 10s infinite linear;
+}
+
+.svg-container > span {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

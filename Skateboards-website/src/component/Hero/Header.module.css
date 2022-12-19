@@ -22,6 +22,7 @@
     height: 400px;
     position: absolute;
     top: calc(100vh - 200px);
+    background-color: black;
 }
 
 /*/ scrolling image container /*/
@@ -128,6 +129,7 @@
 .headerImage {
     width: 100%;
     height: auto;
+    filter: brightness(80%);
 }
 
 .backgroundText {
@@ -165,5 +167,13 @@
     }
     to {
         transform: translateX(-35%);
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .headerImage {
+        height: 100%;
+        width: auto;
+        filter: brightness(70%);
     }
 }

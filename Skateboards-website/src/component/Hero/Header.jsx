@@ -39,7 +39,7 @@ const Header = () => {
 
   const { ref, inView, entry } = useInView({  // currently working minor changes needed to improve header.
     // optional options
-    threshold: 0.49,
+    threshold: 0.47,
   });
   console.log(inView);
   

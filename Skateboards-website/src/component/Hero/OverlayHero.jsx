@@ -1,4 +1,4 @@
-import IconButton from '../General/IconButton';
+import IconButton from '../General/ButtonPrimary';
 import styles from './OverlayHero.module.css';
 
 const OverlayHero = () => {
@@ -13,7 +13,7 @@ const OverlayHero = () => {
         <p className={styles.overlayDesc}>
         No, girl, I don't like all these ice creams and frozen juices... When I was a kid I liked it, of course, but I don't know what else I liked... let's have the usual, white chocolate-covered... And what's that lilac soap you have? mr.pops? I'll take the bright yellow one, what's that? Mango-maracuya? Oh, it's cold! And what's that crunching on your teeth? Bones... cool! And can I bring this pink one, too!
         </p>
-        <IconButton text="SKATEBOARDS"/>
+        <IconButton text="SKATEBOARDS" button="svg"/>
         <span className={styles.titleTail}>RDS</span>
       </div>
   </div>
