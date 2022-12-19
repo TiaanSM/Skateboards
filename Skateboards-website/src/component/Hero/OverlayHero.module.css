@@ -1,0 +1,86 @@
+.textOverlay {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: transparent;
+    z-index: 10;
+}
+  
+.textContainer {
+    width: 50%;
+    height: auto;
+    text-align: right;
+}
+  
+.specialTitle {
+    font-size: 10rem;
+    line-height: 10rem;
+    font-weight: 500;
+    color: #def2f1;
+}
+  
+.paragraphContainer {
+    width: 50%;
+    height: 100%;
+    padding: 2rem;
+    position: relative;
+}
+
+.overlayDesc {
+    width: 475px;
+    height: auto;
+    padding-top: 5.25rem;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+    color: #def2f1;
+}
+  
+.titleTail {
+    font-size: 10rem;
+    position: absolute;
+    bottom: 5rem;
+    left: 0rem;
+    font-weight: 500;
+    color:  #def2f1;
+}
+
+@media screen and (max-width: 950px) {
+    .textOverlay {
+        display: block;
+    }
+    .textContainer {
+        text-align: left;
+        width: 100%;
+        position: absolute;
+        padding-inline: 1rem;
+        top: 5rem;
+    }
+    .specialTitle {
+        font-size: 7rem;
+        line-height: 6rem;
+    }
+    .titleTail {
+        font-size: 7rem;
+        line-height: 6rem;
+        left: 16rem;
+        bottom: 18.55rem;
+    }
+    .paragraphContainer {
+        width: auto;
+        height: auto;
+        position: absolute;
+        bottom: 0px;
+        padding: 1rem;
+    }
+    .overlayDesc {
+        width: auto;
+        height: auto;
+        padding-inline: 1rem;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
