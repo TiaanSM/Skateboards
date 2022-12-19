@@ -22,11 +22,7 @@
     height: 400px;
     position: absolute;
     top: calc(100vh - 200px);
-    background-color: black;
 }
-
-/*/ scrolling image container /*/
-
 
 .size0 {
     width: 100vw; 
@@ -129,7 +125,7 @@
 .headerImage {
     width: 100%;
     height: auto;
-    filter: brightness(80%);
+    filter: brightness(85%);
 }
 
 .backgroundText {
