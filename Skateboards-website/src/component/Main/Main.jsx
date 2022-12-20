@@ -1,8 +1,6 @@
 import '../Main/Main.css';
 import ButtonPrimary from '../General/ButtonPrimary.jsx';
-
-
-
+import Carousel from './Carousel';
 
 const Main = () => {
 
@@ -37,7 +35,7 @@ const Main = () => {
           <img src={require('../img/img-5.jpg')} alt="" className="main-img-3"  />
         </div>
     </div>
-        
+        <Carousel />
     </article>
   )
 }
