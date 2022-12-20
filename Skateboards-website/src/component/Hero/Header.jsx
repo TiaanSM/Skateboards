@@ -11,7 +11,7 @@ const Header = () => {
   // extract image container as component for less code here and reusability.
   
   const [count, setCount] = useState(0);
-
+  
   const handleWheel = ({ deltaY }) => {
 
     if (inView) {
@@ -33,7 +33,7 @@ const Header = () => {
     const wheel = deltaY > 0 ? increaseCount() : decreaseCount();
 
     return wheel, console.log(count);
-    } 
+    }
   }
   
 

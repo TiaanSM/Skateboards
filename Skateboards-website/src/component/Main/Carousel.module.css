@@ -1,0 +1,50 @@
+.carousel {
+    width: 100vw;
+    height: 29rem;
+    background-color: #e84a5f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 3rem;
+}
+
+.imageContainer {
+    width: calc(100vw - 2rem);
+    height: 27rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.carouselImage {
+    width: 20rem;
+    height: auto;
+    overflow: hidden;
+    border-radius: 60px 0 0 0;
+}
+
+.carousel-image:nth-child(even) {
+    border-radius: 0 60px 0 0;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .carousel-image:nth-child(1) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .carousel-image:nth-child(2) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .carousel-image {
+       width: 260px;
+    }
+}
