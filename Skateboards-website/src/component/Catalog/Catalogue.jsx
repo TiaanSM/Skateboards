@@ -43,7 +43,7 @@ const Catalogue = () => {
           }
         
         </div>
-        <ButtonPrimary text="ALL DECKS" button="primary-button" />
+        <ButtonPrimary text="ALL DECKS" button="primary-button" className="button" />
     </main>
   )
 }

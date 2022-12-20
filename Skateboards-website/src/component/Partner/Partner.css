@@ -1,12 +1,10 @@
 .partner-section {
     width: 100vw;
     height: 110vh;
-    background-color: lightblue;
     position: relative;
     overflow: hidden;
     background-image: url("../img/img-8.jpg");
     background-size: cover;
-    background-position: absolute;
 }
 
 .partner-title {

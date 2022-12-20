@@ -11,13 +11,10 @@ Todos:
 - Buttons work.
 
 2. Header
-- Layout finished and responsive.
-- Scaling image component works correctly.
 - All links work.
 - All animations work correctly.
 
 3. Main
-- Layout finished and responsive.
 - Animations work correctly.
 - Link works.
 - Carousel finished and working.
@@ -52,15 +49,13 @@ Todos:
 6. Catalog
 
 --TODOS--
-1. Make IconButton in primary color for catalog and location.
+
 2. Make function to change navbar buttons box-shadow color when conflicting.
 3. Complete basic layout for all section for landing page.
-4. Questionare for info section, intersection observer.
+4. Questionare for info section.
 5. Add map location icon, create icons.
 6. Add scrolling image for section before form.
 7. Form validation for Footer.
 8. Improve overall animations.
 9. Partner section add parallax effect.
 10. Hover effects for all buttons working, modal popup animations, navbar opening/closing
-
-|* Important: change styling to styled components *|

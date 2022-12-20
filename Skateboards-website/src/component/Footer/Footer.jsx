@@ -44,7 +44,7 @@ const Footer = () => {
       </form>
 
       <span className={styles.footerLinks}>
-        <p className={styles.footerTag}> &copy; SK8BOARDS / All Rights Reserved</p>
+        <p className={styles.footerTag}> &copy; SK8BOARDS / ARR</p>
         <a href="/" className={styles.footerTag}>Public offer</a>
 
         <span className={styles.footerSocialLinks}>
