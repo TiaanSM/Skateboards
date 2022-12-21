@@ -4,6 +4,9 @@ import ButtonPrimary from '../General/ButtonPrimary';
 import Map_Svg from './Map_Svg';
 
 const Location = () => {
+  
+  // map location colored and on hover show text location. 
+
   return (
     <section className={styles.section}>
         <div className={styles.textContainer}>
