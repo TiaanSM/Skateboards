@@ -4,12 +4,7 @@ import Carousel from './Carousel';
 
 const Main = () => {
 
-  // main image = 557,500 x 780.500
-
-  // carousel at the bottom of this section, auto moving.
-
-  // add intersection abserver details.
-  // add carousel and finnish it.
+  // add intersection observer and animations.
 
   return (
     <article className={styles.main}>
